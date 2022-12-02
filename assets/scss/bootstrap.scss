@@ -655,9 +655,9 @@ progress {
     max-width: 1080px;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1520px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1280px;
+    max-width: 1520px;
   }
 }
 .row {
@@ -6497,6 +6497,9 @@ textarea.form-control-lg {
 
 .ratio-21x9 {
   --bs-aspect-ratio: 42.8571428571%;
+}
+.ratio-5x6 {
+  aspect-ratio: 5 / 6;
 }
 
 .fixed-top {
