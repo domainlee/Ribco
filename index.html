@@ -39,18 +39,24 @@
                                 </h1>
                             </a>
                         </div>
-                        <div class="header__menu ms-auto d-flex flex-row justify-content-center align-items-center">
+                        <div class="header__menu d-flex flex-row justify-content-center align-items-center">
                             <div class="header__nav d-flex align-items-center justify-content-center mx-0 mx-lg-3">
                                 <ul class="header__navigation nav d-flex flex-column flex-lg-row justify-content-center align-items-center">
-                                    <li class="nav-item"><a class="nav-link" href="#home"><img src="assets/images/home.svg" />Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#about-me">About</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#my-resume">Resume</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#my-service">Portfolio</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#home"><img src="assets/images/i-home.svg" />Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#about-me"><img src="assets/images/i-about.svg" />About</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#my-resume"><img src="assets/images/i-resume.svg" />Resume</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#my-service"><img src="assets/images/i-briefcase.svg" />Portfolio</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#contact"><img src="assets/images/i-contact.svg" />Contact</a></li>
                                 </ul>
                             </div>
+
+                        </div>
+                        <div class="ms-auto">
+                            <div class="header__button-hire">
+                                <a href="">Hire Me</a>
+                            </div>
                             <a class="header__button-menu d-inline-flex d-lg-none"></a>
-                            <a class="button-dark-mode"><i class="icofont-moon"></i></a>
+                            <a class="button-dark-mode d-none"><i class="icofont-moon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -60,39 +66,72 @@
     <div class="header--fixed"></div>
     <!-- end header-->
 
-    <!-- start about me -->
-    <section id="about-me" class="about-me mb-0" >
+    <!-- start home -->
+    <section id="home" class="home mb-0" >
         <div class="container-xl ">
-            <div class="row bg-white vh-100">
-                <div class="col-12 px-6 pt-5">
+            <div class="row bg-white vh-100-80">
+                <div class="col-12 px-6 pt-5 d-flex align-items-center">
                     <div class="row">
                         <div class="col-5">
                             <div class="about-me__left">
                                 <figure class="about-me__avatar ratio ratio-5x6 bg-cover lazy" data-viewport="custom" data-delay="1000" data-src="assets/images/avatar.png"></figure>
-                                <h4 class="about-me__name">Alexzender</h4>
-                                <p class="about-me__role">Web Developer | Sanfransico</p>
-                                <div class="about-me__contact">
-                                    <p>(+987) 987 654 321</p>
-                                    <p>alex.example@gmail.com</p>
-                                </div>
-                                <div class="social">
-                                    <ul>
-                                        <li><a><img src="assets/images/instagram%20icon.svg"></a></li>
-                                    </ul>
+                                <div class="about-me__content">
+                                    <h4 class="about-me__name">Alexzender</h4>
+                                    <p class="about-me__role">Web Developer | Sanfransico</p>
+                                    <div class="about-me__contact">
+                                        <p>(+987) 987 654 321</p>
+                                        <p>alex.example@gmail.com</p>
+                                    </div>
+                                    <div class="social">
+                                        <ul>
+                                            <li><a><img src="assets/images/i-be.svg"></a></li>
+                                            <li><a><img src="assets/images/i-behance.svg"></a></li>
+                                            <li><a><img src="assets/images/i-instagram.svg"></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-7">
-                            <h3 class="about-me__name" data-viewport="opacity" data-delay="600">
-                                <span class="d-block">Hi, I am</span>
-                                <strong class="d-block type--js" data-period="2000" data-type='["Ervin Jason","Designer", "Developer"]'>Ervin Jason</strong>
+                        <div class="col-6">
+                            <h3 class="home__name" data-viewport="opacity" data-delay="600">
+                                <span class="d-block">I'm <strong>Alex</strong></span>
+                                <strong class="home__role d-block type--js" data-period="2000" data-type='["Web Developer","Web Designer", "Copy Writer"]'>Developer</strong>
                             </h3>
+                            <div class="home__intro" data-viewport="opacity" data-delay="500">
+                                <p>
+                                    I'm a NewYork based web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center" data-viewport="opacity">
+                                <div class="home__button">
+                                    <a class="home__button--contact" href="#contact">Contact Me</a>
+                                    <a class="home__button--about" href="#contact"><img src="assets/images/i-arow-down-circle.svg">About Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end home -->
+
+    <!-- start about me -->
+    <section id="about-me" class="about-me mb-0" >
+        <div class="container-xl ">
+            <div class="row bg-white vh-100-80">
+                <div class="col-12 px-6 pt-5 d-flex align-items-center">
+                    <div class="row">
+                        <div class="col-5"></div>
+                        <div class="col-6">
+                            <h2 class="heading-default" data-viewport="opacity">About<span>Me</span></h2>
                             <div class="about-me__intro" data-viewport="opacity" data-delay="500">
                                 <p>
-                                    Senior UX designer with 9+ years experience and specialization in complex web application design.
+                                    Hello there! My name is William Alex. I am a web designer & developer, and I'm very passionate and dedicated to my work.
                                 </p>
                                 <p>
-                                    Achieved 15% increase in user satisfaction and 20% increase in conversions through the creation of interactively tested, data-driven, and user-centered design.
+                                    With 20 years experience as a professional a graphic designer, I have acquired the skills and knowledge necessary to make your project a success.
                                 </p>
                             </div>
                             <div class="about-me__contact d-flex justify-content-between align-items-center" data-viewport="opacity">
