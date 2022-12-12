@@ -101,11 +101,13 @@ img {
     height: calc(100vh - 80px) !important;
 }
 .heading-default {
+    padding: 0 0 15px;
     margin: 0 0 50px;
     position: relative;
     font-size: 24px;
     z-index: 2;
     font-style: italic;
+    border-bottom: 1px solid #DDD;
     span {
         margin: 0 0 0 10px;
         z-index: 2;
@@ -363,6 +365,21 @@ img {
     }
 }
 
+.about-me {
+    .service-item {
+        margin: 0 0 30px 0;
+        padding: 30px;
+        border: 1px solid #DDD;
+        display: flex;
+        background-color: #f9f9f9;
+        img {
+            width: 70px;
+            padding: 10px;
+            background-color: #FFF;
+            border-radius: 50%;
+        }
+    }
+}
 
 /** 12. Start Single Page **/
 .single-post {
