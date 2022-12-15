@@ -190,21 +190,24 @@
             client_slider.data('owl.carousel').to(number, 300, true);
         });
 
-        $('.gallery-side--js').owlCarousel({
+
+
+        $('.pricing__js').owlCarousel({
             loop: true,
-            margin: 0,
+            margin: 30,
             dots: false,
             nav: true,
             lazyLoad: true,
+            autoWidth: true,
             autoplay: true,
-            items: 1,
-            navText : ["<i class='icofont-thin-left'></i>","<i class='icofont-thin-right'></i>"],
+            items: 2,
+            navText : ["<i class='i-left'></i>","<i class='i-right'></i>"],
             responsive: {
                 0: {
-                    nav: false,
+                    nav: true,
                 },
                 480: {
-                    nav: false,
+                    nav: true,
                 },
                 768: {
                     nav: true,

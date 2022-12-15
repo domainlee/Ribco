@@ -120,20 +120,20 @@
     <!-- start about me -->
     <section id="about-me" class="about-me mb-0" >
         <div class="container-xl ">
-            <div class="row bg-white vh-100-80">
+            <div class="row bg-white">
                 <div class="col-12 px-6 pt-5">
                     <div class="row">
                         <div class="col-6 offset-4">
                             <h2 class="heading-default" data-viewport="opacity">About<span>Me</span></h2>
                             <div class="about-me__intro" data-viewport="opacity" data-delay="500">
                                 <p>
-                                    Hello there! My name is William Alex. I am a web designer & developer, and I'm very passionate and dedicated to my work.
+                                    Hello there! My name is <span class="c-violet">William Alex</span>. I am a web designer & developer, and I'm very passionate and dedicated to my work.
                                 </p>
                                 <p>
                                     With 20 years experience as a professional a graphic designer, I have acquired the skills and knowledge necessary to make your project a success.
                                 </p>
                             </div>
-                            <div class="row">
+                            <div class="row about-me__resume my-5">
                                 <div class="col-6 mb-4">
                                     <label>Age</label>
                                     <strong class="d-block">25</strong>
@@ -151,8 +151,8 @@
                                     <strong class="d-block">alex.example@gmail.com</strong>
                                 </div>
                             </div>
-                            <div>
-                                <a href="#">Download My Resume</a>
+                            <div class="mb-5">
+                                <a class="button-download" href="#">Download My Resume <i class="i-download"></i></a>
                             </div>
                         </div>
                     </div>
@@ -163,10 +163,10 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="service-item">
-                                        <div>
-                                            <img src="assets/images/i-home2.svg">
+                                        <div class="service-item__left">
+                                            <i class="i-home-2"></i>
                                         </div>
-                                        <div>
+                                        <div class="service-item__right">
                                             <h3>Economic science</h3>
                                             <div class="">
                                                 Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor elementum.
@@ -176,10 +176,10 @@
                                 </div>
                                 <div class="col-6 ">
                                     <div class="service-item">
-                                        <div>
-                                            <img src="assets/images/i-adv.svg">
+                                        <div class="service-item__left">
+                                            <i class="i-adv"></i>
                                         </div>
-                                        <div>
+                                        <div class="service-item__right">
                                             <h3>Marketing & advertising</h3>
                                             <div class="">
                                                 Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor elementum.
@@ -189,10 +189,10 @@
                                 </div>
                                 <div class="col-6 ">
                                     <div class="service-item">
-                                        <div>
-                                            <img src="assets/images/i-desktop.svg">
+                                        <div class="service-item__left">
+                                            <i class="i-desktop"></i>
                                         </div>
-                                        <div>
+                                        <div class="service-item__right">
                                             <h3>Web development</h3>
                                             <div class="">
                                                 Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor elementum.
@@ -202,10 +202,10 @@
                                 </div>
                                 <div class="col-6 ">
                                     <div class="service-item">
-                                        <div>
-                                            <img src="assets/images/i-music.svg">
+                                        <div class="service-item__left">
+                                            <i class="i-music"></i>
                                         </div>
-                                        <div>
+                                        <div class="service-item__right">
                                             <h3>Music writing</h3>
                                             <div class="">
                                                 Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor elementum.
@@ -215,10 +215,10 @@
                                 </div>
                                 <div class="col-6 ">
                                     <div class="service-item">
-                                        <div>
-                                            <img src="assets/images/i-game.svg">
+                                        <div class="service-item__left">
+                                            <i class="i-game"></i>
                                         </div>
-                                        <div>
+                                        <div class="service-item__right">
                                             <h3>Game development</h3>
                                             <div class="">
                                                 Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor elementum.
@@ -228,10 +228,10 @@
                                 </div>
                                 <div class="col-6 ">
                                     <div class="service-item">
-                                        <div>
-                                            <img src="assets/images/i-photo.svg">
+                                        <div class="service-item__left">
+                                            <i class="i-photo"></i>
                                         </div>
-                                        <div>
+                                        <div class="service-item__right">
                                             <h3>Photography & video</h3>
                                             <div class="">
                                                 Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor elementum.
@@ -246,6 +246,56 @@
                     <div class="row">
                         <div class="col-8 offset-4">
                             <h2 class="heading-default" data-viewport="opacity">My<span>Pricing</span></h2>
+                            <div class="pricing__list pricing__js owl-carousel owl-theme">
+                                <div class="pricing__item">
+                                    <h4>Basic <i class="i-basic"></i></h4>
+                                    <div class="pricing__item--price"><span>$</span><strong>30</strong><span>/hr</span></div>
+                                    <div>
+                                        <i class="i-arrow"></i> Web development
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Advetising</del>
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Music Writing</del>
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Photography</del>
+                                    </div>
+                                </div>
+                                <div class="pricing__item">
+                                    <h4>Premium <i class="i-premium"></i></h4>
+                                    <div class="pricing__item--price"><span>$</span><strong>48</strong><span>/hr</span></div>
+                                    <div>
+                                        <i class="i-arrow"></i> Web development
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Advetising</del>
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Music Writing</del>
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Photography</del>
+                                    </div>
+                                </div>
+                                <div class="pricing__item">
+                                    <h4>Unlimited <i class="i-unlimited"></i></h4>
+                                    <div class="pricing__item--price"><span>$</span><strong>72</strong><span>/hr</span></div>
+                                    <div>
+                                        <i class="i-arrow"></i> Web development
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Advetising</del>
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Music Writing</del>
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Photography</del>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -256,7 +306,7 @@
     <!-- end about me -->
 
     <!-- start my resume -->
-    <section id="my-resume" class="my-resume ">
+    <section id="my-resume" class="my-resume d-none">
         <div class="container-xl">
             <div class="row">
                 <div class="col-12">
@@ -367,7 +417,7 @@
     <!-- end my resume -->
 
     <!-- start my service -->
-    <section id="my-service" class="my-service ">
+    <section id="my-service" class="my-service d-none">
         <div class="container-xl">
             <div class="row">
                 <div class="col-12">
@@ -457,7 +507,7 @@
     <!-- end my service -->
 
     <!-- start my project -->
-    <section id="my-project" class="my-project ">
+    <section id="my-project" class="my-project d-none">
         <div class="container-xl">
             <div class="row">
                 <div class="col-12">
@@ -725,7 +775,7 @@
     <!-- end my project -->
 
     <!-- start my client -->
-    <section id="my-client" class="my-client  bg-grey">
+    <section id="my-client" class="my-client  d-none">
         <div class="container-xl">
             <div class="row">
                 <div class="col-12 col-md-8 offset-0 offset-md-2">
@@ -784,7 +834,7 @@
     <!-- start my client -->
 
     <!-- start my blog -->
-    <section id="my-blog" class="my-blog ">
+    <section id="my-blog" class="my-blog d-none">
         <div class="container-xl">
             <div class="row">
                 <div class="col-12">
@@ -1129,7 +1179,7 @@
     <!-- end my blog -->
 
     <!-- start contact -->
-    <section id="contact" class="contact  bg-grey">
+    <section id="contact" class="contact  d-none">
         <div class="container-xl">
             <div class="row">
                 <div class="col-12">
