@@ -190,8 +190,6 @@
             client_slider.data('owl.carousel').to(number, 300, true);
         });
 
-
-
         $('.pricing__js').owlCarousel({
             loop: true,
             margin: 30,
@@ -201,6 +199,72 @@
             autoWidth: true,
             autoplay: true,
             items: 2,
+            navText : ["<i class='i-left'></i>","<i class='i-right'></i>"],
+            responsive: {
+                0: {
+                    nav: true,
+                },
+                480: {
+                    nav: true,
+                },
+                768: {
+                    nav: true,
+                }
+            }
+        });
+
+        $('.my-experience__js').owlCarousel({
+            loop: true,
+            margin: 30,
+            dots: false,
+            nav: true,
+            lazyLoad: true,
+            autoplay: true,
+            items: 2,
+            navText : ["<i class='i-left'></i>","<i class='i-right'></i>"],
+            responsive: {
+                0: {
+                    nav: true,
+                },
+                480: {
+                    nav: true,
+                },
+                768: {
+                    nav: true,
+                }
+            }
+        });
+
+        $('.client-reviews__js').owlCarousel({
+            loop: true,
+            margin: 30,
+            dots: false,
+            nav: true,
+            lazyLoad: true,
+            autoplay: true,
+            items: 2,
+            navText : ["<i class='i-left'></i>","<i class='i-right'></i>"],
+            responsive: {
+                0: {
+                    nav: true,
+                },
+                480: {
+                    nav: true,
+                },
+                768: {
+                    nav: true,
+                }
+            }
+        });
+
+        $('.brands__js').owlCarousel({
+            loop: true,
+            margin: 30,
+            dots: false,
+            nav: true,
+            lazyLoad: true,
+            autoplay: true,
+            items: 4,
             navText : ["<i class='i-left'></i>","<i class='i-right'></i>"],
             responsive: {
                 0: {
@@ -306,13 +370,11 @@
                 return false;
             },
             rules: {
-                title: "required",
                 name: "required",
                 email: {required : true, email: true},
                 message: "required",
             },
             messages: {
-                title: "Please specify title",
                 name: "Please specify your name",
                 email: "Please specify your email",
                 message: "Please enter message",
@@ -438,6 +500,29 @@
         }, delta);
     }
 
+    var masonry = function () {
+        var $ = require('jquery');
+        var jQueryBridget = require('jquery-bridget');
+        var Isotope = require('isotope-layout');
+        jQueryBridget( 'isotope', Isotope, $ );
+
+        var $grid = $('.grid');
+        $grid.isotope({
+            itemSelector: '.portfolio__item',
+            layoutMode: 'masonry'
+        });
+
+        $('.filter-button-group').on( 'click', 'button', function() {
+            var button = $('.filter-button-group button');
+            button.removeClass('active');
+            $(this).addClass('active');
+
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+
+    }
+
     $(document).ready(function() {
         window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
         if(!isMobile()) {
@@ -455,6 +540,7 @@
         skill();
         component_blog();
         dark();
+        masonry();
 
         $(document).on( 'scroll', function(){
             animation();

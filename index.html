@@ -25,6 +25,13 @@
     </div>
     <!-- end loading-->
 
+    <div class="mode-dark-light">
+        <div class="button" id="button">
+            <input type="checkbox" class="checkbox">
+            <div class="knobs"><span>Dark</span><strong>Light<i class="i-light"></i></strong></div>
+        </div>
+    </div>
+
     <!-- start header-->
     <section class="header d-flex align-content-center flex-row">
         <div class="container-xl">
@@ -45,10 +52,12 @@
                                     <li class="nav-item"><a class="nav-link" href="#home"><img src="assets/images/i-home.svg" />Home</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#about-me"><img src="assets/images/i-about.svg" />About</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#my-resume"><img src="assets/images/i-resume.svg" />Resume</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#my-service"><img src="assets/images/i-briefcase.svg" />Portfolio</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#my-portfolio"><img src="assets/images/i-briefcase.svg" />Portfolio</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#contact"><img src="assets/images/i-contact.svg" />Contact</a></li>
                                 </ul>
                             </div>
+
+
 
                         </div>
                         <div class="ms-auto">
@@ -70,7 +79,7 @@
     <section id="home" class="home mb-0" >
         <div class="container-xl ">
             <div class="row bg-white vh-100-80">
-                <div class="col-12 px-6 pt-5 d-flex align-items-center">
+                <div class="col-12 px-6 d-flex align-items-center">
                     <div class="row">
                         <div class="col-5">
                             <div class="about-me__left">
@@ -84,9 +93,9 @@
                                     </div>
                                     <div class="social">
                                         <ul>
-                                            <li><a><img src="assets/images/i-be.svg"></a></li>
-                                            <li><a><img src="assets/images/i-behance.svg"></a></li>
-                                            <li><a><img src="assets/images/i-instagram.svg"></a></li>
+                                            <li><a><i class="i-be"></i></a></li>
+                                            <li><a><i class="i-behance"></i></a></li>
+                                            <li><a><i class="i-instagram"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -121,7 +130,7 @@
     <section id="about-me" class="about-me mb-0" >
         <div class="container-xl ">
             <div class="row bg-white">
-                <div class="col-12 px-6 pt-5">
+                <div class="col-12 px-6">
                     <div class="row">
                         <div class="col-6 offset-4">
                             <h2 class="heading-default" data-viewport="opacity">About<span>Me</span></h2>
@@ -151,13 +160,13 @@
                                     <strong class="d-block">alex.example@gmail.com</strong>
                                 </div>
                             </div>
-                            <div class="mb-5">
+                            <div class="">
                                 <a class="button-download" href="#">Download My Resume <i class="i-download"></i></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row pt-6">
                         <div class="col-8 offset-4">
                             <h2 class="heading-default" data-viewport="opacity">My<span>Service</span></h2>
                             <div class="row">
@@ -243,7 +252,7 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row pt-6">
                         <div class="col-8 offset-4">
                             <h2 class="heading-default" data-viewport="opacity">My<span>Pricing</span></h2>
                             <div class="pricing__list pricing__js owl-carousel owl-theme">
@@ -306,212 +315,259 @@
     <!-- end about me -->
 
     <!-- start my resume -->
-    <section id="my-resume" class="my-resume d-none">
+    <section id="my-resume" class="my-resume">
         <div class="container-xl">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="heading-default" data-viewport="custom">My Resume<span>The services we provide</span></h2>
-                    <div class="">
-                        <div class="row">
-                            <div class="col-12 col-md-6 pe-2 pe-md-4 pe-lg-5 my-resume__item mb-4">
-                                <h3 class="heading-default__small" data-viewport="opacity"><i class="icofont-gears"></i>Skill</h3>
-                                <div class="my-resume__skill">
-                                    <div class="my-resume__skill--item " data-viewport="custom">
-                                        <label>Photoshop</label>
-                                        <div class="my-resume__skill--precent" data-precent="60"><div></div><span class="count"></span></div>
-                                    </div>
-                                    <div class="my-resume__skill--item " data-viewport="custom">
-                                        <label>Wordpress</label>
-                                        <div class="my-resume__skill--precent" data-precent="80"><div></div><span class="count"></span></div>
-                                    </div>
-                                    <div class="my-resume__skill--item " data-viewport="custom">
-                                        <label>ReactJS</label>
-                                        <div class="my-resume__skill--precent" data-precent="90"><div></div><span class="count"></span></div>
-                                    </div>
-                                    <div class="my-resume__skill--item " data-viewport="custom">
-                                        <label>System Admin</label>
-                                        <div class="my-resume__skill--precent" data-precent="50"><div></div><span class="count"></span></div>
-                                    </div>
-                                    <div class="my-resume__skill--item " data-viewport="custom">
-                                        <label>Jquery</label>
-                                        <div class="my-resume__skill--precent" data-precent="60"><div></div><span class="count"></span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 ps-2 ps-md-4 ps-lg-5 my-resume__item mb-4">
-                                <h3 class="heading-default__small" data-viewport="opacity"><i class="icofont-education"></i>Education</h3>
-                                <div class="education__list highlight">
-                                    <div class="education__item highlight__item" data-viewport="opacity">
-                                        <div class="education__date">2010 - 2012</div>
-                                        <div class="education__name">Masters in Interaction Design</div>
-                                        <div class="education__subname">University of North Texas, Denton, TX</div>
-                                    </div>
-                                    <div class="education__item highlight__item" data-viewport="opacity">
-                                        <div class="education__date">2006 - 2009</div>
-                                        <div class="education__name">Bachelor of Science in Computer Science</div>
-                                        <div class="education__subname">University of North Texas, Denton, TX</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 pe-2 pe-md-4 pe-lg-5 my-resume__item">
-                                <h3 class="heading-default__small" data-viewport="opacity"><i class="icofont-flora-flower"></i>Experience</h3>
-                                <div class="experience__list highlight">
-                                    <div class="experience__item highlight__item" data-viewport="opacity">
-                                        <div class="experience__date">2014 - Present</div>
-                                        <div class="experience__company">Soft Tech Inc.</div>
-                                        <div class="experience__position">Senior UX Designer</div>
-                                        <div class="experience__description">
-                                            <p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod leo lectus.</p>
+            <div class="row bg-white">
+                <div class="col-12 px-6">
+
+                    <div class="row pt-6">
+                        <div class="col-8 offset-4">
+                            <h2 class="heading-default" data-viewport="opacity">My<span>Experience</span></h2>
+                            <div class="row">
+                                <div class="my-experience__list my-experience__js owl-carousel owl-theme">
+                                    <div class="my-experience__item">
+                                        <div class="my-experience__item--inner">
+                                            <div class="my-experience__date"><i class="i-circle"></i>2018 - 2019 <span>-Envato</span></div>
+                                            <h4 class="my-experience__name">Web Developer</h4>
+                                            <div class="my-experience__description">I have acquired the skills and knowledge necessary to make your project a success.</div>
                                         </div>
                                     </div>
-                                    <div class="experience__item highlight__item" data-viewport="opacity">
-                                        <div class="experience__date">2010 - 2014</div>
-                                        <div class="experience__company">Kana Design Studio</div>
-                                        <div class="experience__position">Junior UX Designer</div>
-                                        <div class="experience__description">
-                                            <p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod leo lectus.</p>
+                                    <div class="my-experience__item">
+                                        <div class="my-experience__item--inner">
+                                            <div class="my-experience__date"><i class="i-circle"></i>2020 - 2021 <span>-Envato</span></div>
+                                            <h4 class="my-experience__name">Web Developer</h4>
+                                            <div class="my-experience__description">I have acquired the skills and knowledge necessary to make your project a success.</div>
                                         </div>
                                     </div>
-                                    <div class="experience__item highlight__item" data-viewport="opacity">
-                                        <div class="experience__date">2009 - 2010</div>
-                                        <div class="experience__company">Paperart</div>
-                                        <div class="experience__position">Junior UX Designer</div>
-                                        <div class="experience__description">
-                                            <p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod leo lectus.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 ps-2 ps-md-4 ps-lg-5 my-resume__item">
-                                <h3 class="heading-default__small" data-viewport="opacity"><i class="icofont-crown-queen"></i>Awards</h3>
-                                <div class="awards__list highlight">
-                                    <div class="awards__item highlight__item" data-viewport="opacity">
-                                        <div class="awards__date">06-2019</div>
-                                        <div class="awards__name">Year of the Month</div>
-                                        <div class="awards__description">
-                                            <p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod leo lectus.</p>
-                                        </div>
-                                    </div>
-                                    <div class="awards__item highlight__item" data-viewport="opacity">
-                                        <div class="awards__date">04-2016</div>
-                                        <div class="awards__name">Site of the Day</div>
-                                        <div class="awards__description">
-                                            <p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod leo lectus.</p>
-                                        </div>
-                                    </div>
-                                    <div class="awards__item highlight__item" data-viewport="opacity">
-                                        <div class="awards__date">01-2015</div>
-                                        <div class="awards__name">Site of the Week</div>
-                                        <div class="awards__description">
-                                            <p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod leo lectus.</p>
+                                    <div class="my-experience__item">
+                                        <div class="my-experience__item--inner">
+                                            <div class="my-experience__date"><i class="i-circle"></i>2021 - Present <span>-Envato</span></div>
+                                            <h4 class="my-experience__name">Web Developer</h4>
+                                            <div class="my-experience__description">I have acquired the skills and knowledge necessary to make your project a success.</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="row pt-6">
+                        <div class="col-8 offset-4">
+                            <h2 class="heading-default" data-viewport="opacity">My<span>Skills</span></h2>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="my-resume__skill">
+                                        <div class="my-resume__skill--item " data-viewport="custom">
+                                            <div class="my-resume__skill--precent" data-precent="85"><label>Photoshop</label><div></div><span class="count"></span></div>
+                                        </div>
+                                        <div class="my-resume__skill--item " data-viewport="custom">
+                                            <div class="my-resume__skill--precent" data-precent="80"><label>Wordpress</label><div></div><span class="count"></span></div>
+                                        </div>
+                                        <div class="my-resume__skill--item " data-viewport="custom">
+                                            <div class="my-resume__skill--precent" data-precent="90"><label>ReactJS</label><div></div><span class="count"></span></div>
+                                        </div>
+                                        <div class="my-resume__skill--item " data-viewport="custom">
+                                            <div class="my-resume__skill--precent" data-precent="60"><label>System Admin</label><div></div><span class="count"></span></div>
+                                        </div>
+                                        <div class="my-resume__skill--item " data-viewport="custom">
+                                            <div class="my-resume__skill--precent" data-precent="70"><label>Jquery</label><div></div><span class="count"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-6">
+                        <div class="col-8 offset-4">
+                            <h2 class="heading-default" data-viewport="opacity">Client<span>Reviews</span></h2>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="client-reviews client-reviews__js owl-carousel owl-theme">
+                                        <div class="client-reviews__item">
+                                            <div class="client-reviews__item--inner">
+                                                <div class="client-reviews__content">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed sit ultrices et sed metus sollicitudin...
+                                                </div>
+                                                <div class="client-reviews__info">
+                                                    <div>
+                                                        <img src="assets/images/client-1.png" alt="" >
+                                                    </div>
+                                                    <div>
+                                                        <h3>Emerson Saris</h3>
+                                                        <span>58, California, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="client-reviews__item">
+                                            <div class="client-reviews__item--inner">
+                                                <div class="client-reviews__content">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed sit ultrices et sed metus sollicitudin...
+                                                </div>
+                                                <div class="client-reviews__info">
+                                                    <div>
+                                                        <img src="assets/images/client-1.png" alt="" >
+                                                    </div>
+                                                    <div>
+                                                        <h3>Emerson Saris</h3>
+                                                        <span>58, California, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="client-reviews__item">
+                                            <div class="client-reviews__item--inner">
+                                                <div class="client-reviews__content">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed sit ultrices et sed metus sollicitudin...
+                                                </div>
+                                                <div class="client-reviews__info">
+                                                    <div>
+                                                        <img src="assets/images/client-1.png" alt="" >
+                                                    </div>
+                                                    <div>
+                                                        <h3>Emerson Saris</h3>
+                                                        <span>58, California, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-6">
+                        <div class="col-8 offset-4">
+                            <h2 class="heading-default" data-viewport="opacity">Worked with<span>Brands</span></h2>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="brands brands__js owl-carousel owl-theme">
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-1.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-2.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-3.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-4.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-1.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-2.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-3.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-4.png" alt="" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
     <!-- end my resume -->
 
-    <!-- start my service -->
-    <section id="my-service" class="my-service d-none">
+    <!-- start my portfolio -->
+    <section id="my-portfolio" class="my-portfolio">
         <div class="container-xl">
-            <div class="row">
-                <div class="col-12">
-                    <div class="my-service__inner">
-                        <h2 class="heading-default" data-viewport="opacity">My Services<span>The services we provide</span></h2>
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <div class="my-service__left">
-                                    <h3 class="my-service__left--heading" data-viewport="opacity">What do i help ?</h3>
-                                    <div class="my-service__left--intro" data-viewport="opacity">With more than 100 successful projects of varying scale and complexity, Branch portfolio includes single page websites, corporate sites, healthcare portals, directory sites</div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="my-service__left--statistical" data-viewport="opacity">
-                                                <strong>285+</strong>
-                                                <span>Project Completed</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="my-service__left--statistical" data-viewport="opacity">
-                                                <strong>190+</strong>
-                                                <span>Design Project</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="my-service__left--statistical" data-viewport="opacity">
-                                                <strong>120+</strong>
-                                                <span>Dev Project</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="my-service__left--statistical" data-viewport="opacity">
-                                                <strong>20+</strong>
-                                                <span>Happy Clients</span>
-                                            </div>
-                                        </div>
-                                    </div>
+            <div class="row bg-white">
+                <div class="col-12 px-6 pt-6">
+                    <div class="row">
+                        <div class="col-8 offset-4">
+                            <h2 class="heading-default" data-viewport="opacity">My<span>Portfolio</span></h2>
+                            <div class="position-relative">
+                                <div class="filter-button-group">
+                                    <button class="active" data-filter="*">Show All</button>
+                                    <button data-filter=".brand">Brand</button>
+                                    <button data-filter=".colors">Colors</button>
+                                    <button data-filter=".photography">Photography</button>
+                                    <button data-filter=".web">Web</button>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-8">
-                                <div class="my-service__right">
-                                    <div class="my-service__list">
-                                    <div class="my-service__item" data-viewport="opacity">
-                                        <div class="my-service__item--inner">
-                                            <i class="icofont-weed"></i>
-                                            <h3 class="my-service__title">Branding Design</h3>
-                                            <div class="my-service__intro">
-                                                With more than 100 successful projects of varying scale and complexity, Branch portfolio includes single page websites, corporate sites, healthcare portals, directory sites
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="portfolio__js portfolio__list grid">
+                                        <div class="portfolio__item photography" data-viewport="opacity">
+                                            <img src="assets/images/portfolio-5.png" alt="Portfolio 1" >
+                                            <div class="portfolio__item--inner">
+                                                <div class="portfolio__item--content">
+                                                    <div>
+                                                        <span>App</span>
+                                                        <h4>ios  Development</h4>
+                                                    </div>
+                                                    <a class="button-image" href="assets/images/portfolio-5.png"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio__item colors web" data-viewport="opacity">
+                                            <img src="assets/images/portfolio-2.png" alt="Portfolio 2" >
+                                            <div class="portfolio__item--inner">
+                                                <div class="portfolio__item--content">
+                                                    <div>
+                                                        <span>Web</span>
+                                                        <h4>Landing Development</h4>
+                                                    </div>
+                                                    <a class="button-image" href="assets/images/portfolio-2.png"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio__item photography brand" data-viewport="opacity">
+                                            <img src="assets/images/portfolio-3.png" alt="Portfolio 3" >
+                                            <div class="portfolio__item--inner">
+                                                <div class="portfolio__item--content">
+                                                    <div>
+                                                        <span>Photography</span>
+                                                        <h4>Design Landing</h4>
+                                                    </div>
+                                                    <a class="button-image" href="assets/images/portfolio-3.png"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio__item colors" data-viewport="opacity">
+                                            <img src="assets/images/portfolio-4.png" alt="Portfolio 4" >
+                                            <div class="portfolio__item--inner">
+                                                <div class="portfolio__item--content">
+                                                    <div>
+                                                        <span>Colors</span>
+                                                        <h4>Design Layout</h4>
+                                                    </div>
+                                                    <a class="button-image" href="assets/images/portfolio-4.png"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio__item brand web" data-viewport="opacity">
+                                            <img src="assets/images/portfolio-1.png" alt="Portfolio 1" >
+                                            <div class="portfolio__item--inner">
+                                                <div class="portfolio__item--content">
+                                                    <div>
+                                                        <span>Brand</span>
+                                                        <h4>Design Logo</h4>
+                                                    </div>
+                                                    <a class="button-image" href="assets/images/portfolio-1.png"></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="my-service__item" data-viewport="opacity">
-                                        <div class="my-service__item--inner">
-                                            <i class="icofont-love"></i>
-                                            <h3 class="my-service__title">Development</h3>
-                                            <div class="my-service__intro">
-                                                With more than 100 successful projects of varying scale and complexity, Branch portfolio includes single page websites, corporate sites, healthcare portals, directory sites
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="my-service__item" data-viewport="opacity">
-                                        <div class="my-service__item--inner">
-                                            <i class="icofont-bow"></i>
-                                            <h3 class="my-service__title">Writing</h3>
-                                            <div class="my-service__intro">
-                                                With more than 100 successful projects of varying scale and complexity, Branch portfolio includes single page websites, corporate sites, healthcare portals, directory sites
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="my-service__item" data-viewport="opacity">
-                                        <div class="my-service__item--inner">
-                                            <i class="icofont-dart"></i>
-                                            <h3 class="my-service__title">Marketing Online</h3>
-                                            <div class="my-service__intro">
-                                                With more than 100 successful projects of varying scale and complexity, Branch portfolio includes single page websites, corporate sites, healthcare portals, directory sites
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end my service -->
 
-    <!-- start my project -->
-    <section id="my-project" class="my-project d-none">
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-12">
-                    <div class="my-project__inner">
+                    <div class="my-project__inner d-none">
                         <h2 class="heading-default" data-viewport="opacity">My Project<span>Projects that I have done</span></h2>
                         <ul class="my-project__nav nav d-flex justify-content-center mb-3" data-viewport="opacity">
                             <li class="nav-item" role="presentation">
@@ -772,470 +828,62 @@
             </div>
         </div>
     </section>
-    <!-- end my project -->
-
-    <!-- start my client -->
-    <section id="my-client" class="my-client  d-none">
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-12 col-md-8 offset-0 offset-md-2">
-                    <h2 class="heading-default" data-viewport="opacity">My Client<span>What customers say about us</span></h2>
-                    <div class="my-client__list my-client__js owl-carousel owl-theme" data-viewport="opacity">
-                        <!-- start client item -->
-                        <div class="my-client__item">
-                            <div class="my-client__intro mb-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra mauris vel est facilisis, sed molestie nulla pharetra. Sed viverra leo eget mauris accumsan, eget vulputate tellus gravida. Cras et imperdiet ligula, quis porttitor libero. Donec luctus eu dui feugiat suscipit. Donec pulvinar metus non nisl ullamcorper commodo.
-                            </div>
-                            <h2 class="my-client__name">MR Christian</h2>
-                            <p class="my-client__position">CEO</p>
-                        </div>
-                        <!-- end client item -->
-
-                        <!-- start client item -->
-                        <div class="my-client__item">
-                            <div class="my-client__intro mb-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra mauris vel est facilisis, sed molestie nulla pharetra. Sed viverra leo eget mauris accumsan, eget vulputate tellus gravida. Cras et imperdiet ligula, quis porttitor libero. Donec luctus eu dui feugiat suscipit.
-                            </div>
-                            <h2 class="my-client__name">MS Jane</h2>
-                            <p class="my-client__position">Designer</p>
-                        </div>
-                        <!-- end client item -->
-                        <!-- start client item -->
-                        <div class="my-client__item">
-                            <div class="my-client__intro mb-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra mauris vel est facilisis, sed molestie nulla pharetra. Sed viverra leo eget mauris accumsan, eget vulputate tellus gravida. Cras et imperdiet ligula, quis porttitor libero. Donec luctus eu dui feugiat suscipit.
-                            </div>
-                            <h2 class="my-client__name">Joe Morgan</h2>
-                            <p class="my-client__position">Development</p>
-                        </div>
-                        <!-- end client item -->
-                    </div>
-                    <div class="my-client__list--thumb my-client__js--thumb owl-carousel owl-theme" data-viewport="opacity">
-                        <!-- start client item -->
-                        <div class="my-client__item--thumb">
-                            <figure class="mx-2 ratio ratio-1x1 rounded-circle bg-cover owl-lazy" data-src="assets/images/mehrab-zahedbeigi-Wa3v4Fd8xBg-unsplash.jpg"></figure>
-                        </div>
-                        <!-- end client item -->
-                        <!-- start client item -->
-                        <div class="my-client__item--thumb">
-                            <figure class="mx-2 ratio ratio-1x1 rounded-circle bg-cover owl-lazy" data-src="assets/images/omid-armin-DRB6i_jIbww-unsplash.jpg"></figure>
-                        </div>
-                        <!-- end client item -->
-                        <!-- start client item -->
-                        <div class="my-client__item--thumb">
-                            <figure class="mx-2 ratio ratio-1x1 rounded-circle bg-cover owl-lazy" data-src="assets/images/icons8-team-as5uuSv4F84-unsplash.jpg"></figure>
-                        </div>
-                        <!-- end client item -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- start my client -->
-
-    <!-- start my blog -->
-    <section id="my-blog" class="my-blog d-none">
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-12">
-                    <div class="my-blog__inner">
-                        <h2 class="heading-default" data-viewport="opacity">My Blog<span>My shared posts</span></h2>
-
-                        <div class="my-blog__list">
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="1">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/leone-venter-pVt9j3iWtPM-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>How to Make Your Tech Last Longer</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Travel</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="2">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/jazmin-quaynor-8ioenvmof-I-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>Two Gamers Played ‘The Last of Us Part II.’ They Were Blown Away.</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Travel</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="3">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/aaron-burden-y02jEX_B0O0-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>Facebook Said to Consider Banning Political Ads</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Writer</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="2">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/corinne-kutz-tMI2_-r5Nfo-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>How to Make Your Tech Last Longer</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Tutorial</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="1">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>Two Gamers Played ‘The Last of Us Part II.’ They Were Blown Away.</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Travel</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="2">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/domenico-loia-hGV2TfOh0ns-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>Facebook Said to Consider Banning Political Ads</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Social</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="1">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/lum3n--RBuQ2PK_L8-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>Facebook Said to Consider Banning Political Ads</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Travel</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="2">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/leone-venter-pVt9j3iWtPM-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>How to Make Your Tech Last Longer</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Travel</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="3">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/jazmin-quaynor-8ioenvmof-I-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>Two Gamers Played ‘The Last of Us Part II.’ They Were Blown Away.</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Travel</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="1">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/aaron-burden-y02jEX_B0O0-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>Facebook Said to Consider Banning Political Ads</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Writer</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="2">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/corinne-kutz-tMI2_-r5Nfo-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>How to Make Your Tech Last Longer</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Tutorial</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="1">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>Two Gamers Played ‘The Last of Us Part II.’ They Were Blown Away.</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Travel</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="2">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/domenico-loia-hGV2TfOh0ns-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>Facebook Said to Consider Banning Political Ads</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Social</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-
-                            <!-- start item blog -->
-                            <div class="my-blog__items" data-viewport="opacity">
-                                <div class="my-blog__items--inner">
-                                    <a class="my-blog__detail" data-id="1">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <figure class="m-0 ratio ratio-4x3 lazy bg-cover" data-src="assets/images/lum3n--RBuQ2PK_L8-unsplash.jpg"></figure>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="my-blog__items--content">
-                                                    <h3>Facebook Said to Consider Banning Political Ads</h3>
-                                                    <div class="entry">
-                                                        <span class="entry__category">Travel</span>
-                                                        <span class="entry__date">July 2, 2022</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end item blog -->
-
-
-
-                        </div>
-
-                        <div class="my-blog__button d-flex justify-content-center" data-viewport="opacity">
-                            <a class="pointer-event">Show More</a>
-                        </div>
-
-                        <!-- start view detail -->
-                        <div class="my-blog__popup">
-                            <div class="my-blog__popup--close">
-                                <a>X</a>
-                            </div>
-                            <div class="my-blog__popup--inner"></div>
-                        </div>
-                        <!-- end view detail -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end my blog -->
+    <!-- end my portfolio -->
 
     <!-- start contact -->
-    <section id="contact" class="contact  d-none">
+    <section id="contact" class="contact ">
         <div class="container-xl">
-            <div class="row">
-                <div class="col-12">
-                    <div class="contact__inner">
-                        <h2 class="heading-default" data-viewport="opacity">Contact<span>What do i help</span></h2>
-                        <div class="row mt-4">
-                            <div class="col-12 col-lg-3">
-                                <div class="contact__list d-flex flex-column flex-md-row flex-lg-column justify-content-start justify-content-md-between justify-content-lg-start" data-viewport="opacity">
-                                    <div class="contact__item mb-4">
-                                        <div class="d-flex align-items-center">
-                                            <div>
-                                                <i class="icofont-phone"></i>
-                                            </div>
-                                            <span>+123 456 7890</span>
+            <div class="row bg-white">
+                <div class="col-12 px-6 pt-5">
+                    <div class="row">
+                        <div class="col-8 offset-4">
+                            <h2 class="heading-default" data-viewport="opacity">Let’s<span>Connect</span></h2>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="contact__left">
+                                        <h3><strong>Feel free to</strong>contact me</h3>
+                                        <div class="contact__left--intro">
+                                            I am passionate about building excellent software that improves
                                         </div>
-                                    </div>
-                                    <div class="contact__item mb-4">
-                                        <div class="d-flex align-items-center">
-                                            <div>
-                                                <i class="icofont-email"></i>
-                                            </div>
-                                            <span>contact@gmail.com</span>
+                                        <div>
+                                            <p>Tel : +77 022 444 05 05</p>
+                                            <p>support@alex.com</p>
+                                            <p>Ave Street Avenue, New York</p>
                                         </div>
-                                    </div>
-                                    <div class="contact__item mb-4">
-                                        <div class="d-flex align-items-center">
-                                            <div>
-                                                <i class="icofont-location-pin"></i>
-                                            </div>
-                                            <span>20, Singapore</span>
+                                        <div class="social">
+                                            <ul>
+                                                <li><a><i class="i-be"></i></a></li>
+                                                <li><a><i class="i-behance"></i></a></li>
+                                                <li><a><i class="i-instagram"></i></a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-lg-9">
-                                <form id="contact__form" class="contact__form" method="post" novalidate="novalidate">
-                                    <div class="form__row">
-                                        <div class="form__item">
-                                            <input type="text" name="title" placeholder="Enter title">
-                                        </div>
-                                        <div class="form__item">
-                                            <input type="text" name="name" placeholder="Enter your full name">
-                                        </div>
-                                        <div class="form__item">
-                                            <input type="email" name="email" placeholder="Enter your email address">
-                                        </div>
+                                <div class="col-6 ps-4">
+                                    <div class="contact__right">
+                                        <h4 class="contact__right--heading">Or, send message</h4>
+                                        <form id="contact__form" class="contact__form" method="post" novalidate="novalidate">
+                                            <div class="form__row">
+                                                <div class="form__item">
+                                                    <input type="text" name="name" placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div class="form__row">
+                                                <div class="form__item">
+                                                    <input type="email" name="email" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="form__row">
+                                                <div class="form__item">
+                                                    <textarea name="message" placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form__row">
+                                                <button type="submit">Send Message</button>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="form__row">
-                                        <div class="form__item">
-                                            <textarea name="message" placeholder="Enter your message here"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form__row text-center">
-                                        <button type="submit">Submit</button>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1246,7 +894,7 @@
     <!-- end contact -->
 
     <!-- start footer -->
-    <section class="footer py-5 py-md-4">
+    <section class="footer py-5 py-md-4 d-none">
         <div class="container-xl">
             <div class="row align-items-center">
                 <div class="col-12 col-md-2">
