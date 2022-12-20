@@ -435,18 +435,21 @@
     
     var dark = function ( ) {
         // init
-        var button = $('.button-dark-mode');
+        var button = $('.mode-dark-light input');
+
         let theme = localStorage.getItem('data-theme');
         if(theme){
             $('html').attr('data-theme', theme);
+            if(theme === 'light') {
+                button.attr("checked", true);
+            }
         }
         var default_theme = $('html').attr('data-theme');
         localStorage.setItem("data-theme", default_theme);
 
         // action
-        button.click(function () {
-            let theme = localStorage.getItem('data-theme');
-            if(theme === 'dark') {
+        button.change(function () {
+            if($(this).is(":checked")) {
                 to_light();
             } else {
                 to_dark();
