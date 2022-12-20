@@ -29,7 +29,12 @@
 
   .home {
     .about-me__left {
-      width: 280px;
+      width: 100%;
+      position: inherit;
+      display: flex;
+      figure {
+        width: 40%;
+      }
     }
   }
 }
