@@ -33,12 +33,79 @@
       position: inherit;
       display: flex;
       figure {
+        margin: 0;
         width: 40%;
       }
     }
   }
 }
 @media (max-width: 768px) {
+  .px-6 {
+    padding-right: 1.2rem !important;
+    padding-left: 1.2rem !important;
+  }
+
+  .home {
+    .home__name {
+      font-size: 42px;
+      margin: 0 0 20px;
+    }
+    .home__intro {
+      margin: 30px 0;
+    }
+    .about-me__left {
+      figure {
+        margin: 0;
+        width: 40%;
+      }
+      .about-me__content {
+        padding: 0 0 0 20px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        .about-me__name {
+          font-size: 24px;
+        }
+        .about-me__role {
+          margin: 0 0 5px;
+        }
+        .about-me__contact {
+          margin: 15px 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    .portfolio__list {
+      .portfolio__item {
+        padding: 10px 15px;
+        width: 100%;
+      }
+    }
+
+    .filter-button-group {
+      position: inherit;
+      right: 0;
+      top: inherit;
+      button {
+        margin: 0 15px 10px 0;
+      }
+    }
+  }
+  .resume {
+    .my-resume__skill {
+      .my-resume__skill--item {
+        width: 100%;
+      }
+    }
+  }
+  .contact {
+    .contact__left {
+      padding: 35px;
+    }
+  }
 
 }
 

@@ -607,8 +607,9 @@ img {
         }
     }
     .service-item {
-        margin: 0 0 25px 0;
+        margin: 0;
         padding: 30px;
+        height: 100%;
         display: flex;
         border: 1px solid var(--border-client);
         background-color: var(--bg-grey-black);
@@ -1417,8 +1418,9 @@ body.my-blog__popup--js {
     display: flex;
     position: relative;
     ul {
-        display: flex;
+        margin: 0;
         padding: 0;
+        display: flex;
         li {
             list-style: none;
             a {

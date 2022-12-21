@@ -198,7 +198,7 @@
             lazyLoad: true,
             autoWidth: true,
             autoplay: true,
-            items: 2,
+            items: 1,
             navText : ["<i class='i-left'></i>","<i class='i-right'></i>"],
             responsive: {
                 0: {
@@ -209,6 +209,7 @@
                 },
                 768: {
                     nav: true,
+                    items: 2,
                 }
             }
         });
@@ -220,7 +221,7 @@
             nav: true,
             lazyLoad: true,
             autoplay: true,
-            items: 2,
+            items: 1,
             navText : ["<i class='i-left'></i>","<i class='i-right'></i>"],
             responsive: {
                 0: {
@@ -231,6 +232,7 @@
                 },
                 768: {
                     nav: true,
+                    items: 2,
                 }
             }
         });
@@ -242,7 +244,7 @@
             nav: true,
             lazyLoad: true,
             autoplay: true,
-            items: 2,
+            items: 1,
             navText : ["<i class='i-left'></i>","<i class='i-right'></i>"],
             responsive: {
                 0: {
@@ -253,6 +255,7 @@
                 },
                 768: {
                     nav: true,
+                    items: 2,
                 }
             }
         });
@@ -264,7 +267,7 @@
             nav: true,
             lazyLoad: true,
             autoplay: true,
-            items: 4,
+            items: 2,
             navText : ["<i class='i-left'></i>","<i class='i-right'></i>"],
             responsive: {
                 0: {
@@ -272,9 +275,11 @@
                 },
                 480: {
                     nav: true,
+                    items: 2,
                 },
                 768: {
                     nav: true,
+                    items: 4,
                 }
             }
         });
