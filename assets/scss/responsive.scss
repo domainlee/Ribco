@@ -3,10 +3,8 @@
     padding-right: 5rem !important;
     padding-left: 5rem !important;
   }
-  .home {
-    .about-me__left {
-      width: 350px;
-    }
+  .about-me__left {
+    width: 350px;
   }
 }
 @media (max-width: 1200px) {
@@ -15,10 +13,8 @@
     padding-left: 3rem !important;
   }
 
-  .home {
-    .about-me__left {
-      width: 320px;
-    }
+  .about-me__left {
+    width: 320px;
   }
 }
 @media (max-width: 992px) {
@@ -27,15 +23,13 @@
     padding-left: 2rem !important;
   }
 
-  .home {
-    .about-me__left {
-      width: 100%;
-      position: inherit;
-      display: flex;
-      figure {
-        margin: 0;
-        width: 40%;
-      }
+  .about-me__left {
+    width: 100%;
+    position: inherit;
+    display: flex;
+    figure {
+      margin: 0;
+      width: 40%;
     }
   }
 }
@@ -53,7 +47,10 @@
     .home__intro {
       margin: 30px 0;
     }
-    .about-me__left {
+
+  }
+
+  .about-me__left {
       figure {
         margin: 0;
         width: 40%;
@@ -75,7 +72,6 @@
         }
       }
     }
-  }
 
   .portfolio {
     .portfolio__list {
