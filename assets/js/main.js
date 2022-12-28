@@ -498,7 +498,7 @@
     
     var dark = function ( ) {
         // init
-        var button = $('.mode-dark-light input');
+        var button = $('.dark-light input');
 
         let theme = localStorage.getItem('data-theme');
         if(theme){

@@ -18,9 +18,156 @@
   }
 }
 @media (max-width: 992px) {
+  .vh-100-80 {
+    height: auto !important;
+  }
+
   .px-6 {
     padding-right: 2rem !important;
     padding-left: 2rem !important;
+  }
+
+  .header {
+    .nav-active {
+      display: none !important;
+      visibility: hidden !important;
+    }
+    .header_inner {
+      .header__button-menu {
+        margin: 0 0 0 20px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        overflow: hidden;
+        width: 50px;
+        height: 20px;
+        align-items: center;
+        cursor: pointer;
+        transition: opacity 0.5s ease;
+        position: relative;
+        &:before {
+          content: 'Menu';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          display: inline-flex;
+          align-items: center;
+          transition: all 1s ease;
+          transform: translate(0, 0);
+        }
+        &:after {
+          content: 'Close';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          display: inline-flex;
+          align-items: center;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 1s ease;
+          transform: translate(0, 20px);
+        }
+        &.active {
+          &:before {
+            transform: translate(0, -20px);
+            opacity: 0;
+            visibility: hidden;
+          }
+          &:after {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0, 0);
+          }
+        }
+        .my-blog__popup--js & {
+          opacity: 0;
+          transition-delay: 0.5s;
+        }
+      }
+      .header__nav {
+        position: fixed;
+        top: 70px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        visibility: hidden;
+        .header__navigation {
+          z-index: 3;
+          li {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.8s ease;
+            transform: translate(0, 5px);
+            a {
+              padding: 15px 12px;
+              font-size: 18px;
+            }
+            @for $i from 1 through 8 {
+              &:nth-child(#{$i}) {
+                transition-delay:(#{($i+1)*0.1s});
+              }
+            }
+            .nav-open-js & {
+              opacity: 1;
+              visibility: visible;
+              transform: translate(0, 0px);
+            }
+          }
+        }
+        .nav-open-js & {
+          visibility: visible;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: var(--bg-white);
+          z-index: 1;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity .5s ease;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 2;
+          background-color: var(--bg-white);
+          visibility: hidden;
+          transition-delay: 1s;
+          -moz-transition-duration: 1s;
+          -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+        }
+        .nav-open-js & {
+          &:before {
+            opacity: 1;
+            visibility: visible;
+          }
+          &:after {
+            visibility: visible;
+          }
+        }
+      }
+      .button-dark-mode {
+        transition: opacity 0.5s ease;
+        .my-blog__popup--js & {
+          opacity: 0;
+          transition-delay: 0.5s;
+        }
+      }
+    }
+    &.w-25 {
+      width: 100% !important;
+    }
   }
 
   .about-me__left {
@@ -30,6 +177,28 @@
     figure {
       margin: 0;
       width: 40%;
+    }
+  }
+  .dark-light-mobile {
+    .i-light {
+      margin: 0;
+    }
+    .knobs {
+      justify-content: center;
+    }
+    .knobs strong {
+      margin: 0;
+    }
+    .knobs span, .knobs strong label {
+      display: none;
+    }
+    .button .knobs:before {
+      display: none;
+    }
+    .button {
+      width: 35px;
+      height: 35px;
+      border: none;
     }
   }
 }

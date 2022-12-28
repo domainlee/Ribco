@@ -117,6 +117,9 @@ img {
 .pt-6 {
     padding-top: 4rem !important;
 }
+.pb-6 {
+    padding-bottom: 4rem !important;
+}
 .vh-100-80 {
     height: calc(100vh - 80px) !important;
 }
@@ -1556,10 +1559,10 @@ body.my-blog__popup--js {
 .button, .button .layer {
     border-radius: 100px;
 }
-#button .knobs, #button .knobs:before, #button .layer {
+.button .knobs, .button .knobs:before, .button .layer {
     transition: 0.3s ease all;
 }
-#button .knobs:before {
+.button .knobs:before {
     content: "";
     position: absolute;
     top: 0;
@@ -1576,10 +1579,10 @@ body.my-blog__popup--js {
     border-radius: 15px;
     transition: .3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
-#button .knobs, #button .knobs:before, #button .layer {
+.button .knobs, .button .knobs:before, .button .layer {
     transition: 0.3s ease all;
 }
-#button .checkbox:checked + .knobs:before {
+.button .checkbox:checked + .knobs:before {
     content: "";
     left: 50px;
     width: 80px;
