@@ -100,6 +100,7 @@
         navigation('.nav-link');
         navigation('.nav-link-two');
         navigation('.nav-link-three');
+        navigation('.home__button--contact');
 
         function navigation(dom) {
             $(dom).each(function (e) {
