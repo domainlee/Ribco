@@ -18,9 +18,6 @@
   }
 }
 @media (max-width: 992px) {
-  .vh-100-80 {
-    height: auto !important;
-  }
 
   .px-6 {
     padding-right: 2rem !important;
@@ -45,6 +42,7 @@
         cursor: pointer;
         transition: opacity 0.5s ease;
         position: relative;
+        color: var(--text);
         &:before {
           content: 'Menu';
           position: absolute;
@@ -88,7 +86,7 @@
       }
       .header__nav {
         position: fixed;
-        top: 70px;
+        top: 80px;
         bottom: 0;
         left: 0;
         right: 0;
@@ -103,6 +101,18 @@
             a {
               padding: 15px 12px;
               font-size: 18px;
+              &.active {
+                color: var(--text);
+                i {
+                  filter: var(--bg-nav-icon);
+                }
+              }
+              &:hover {
+                color: var(--text);
+                i {
+                  filter: var(--bg-nav-icon);
+                }
+              }
             }
             @for $i from 1 through 8 {
               &:nth-child(#{$i}) {
@@ -157,6 +167,16 @@
           }
         }
       }
+      .header__button-hire  {
+        a {
+          padding: 10px 20px !important;
+          border-radius: 8px;
+          background-color: var(--bg-black-yellow);
+          color: var(--text-white) !important;
+          font-size: 16px !important;
+          font-weight: 500;
+        }
+      }
       .button-dark-mode {
         transition: opacity 0.5s ease;
         .my-blog__popup--js & {
@@ -200,6 +220,16 @@
       height: 35px;
       border: none;
     }
+  }
+
+  .button .checkbox:checked + .knobs {
+    background: #3d3d3d;
+  }
+  .knobs {
+    background-color: #FFF;
+  }
+  .button .checkbox:checked + .knobs .i-light {
+    filter: var(--bg-dark-mode-icon);
   }
 }
 @media (max-width: 768px) {
@@ -275,5 +305,63 @@
 }
 
 @media (max-width:576px) {
+  .loading__inner {
+    .loading__list {
+      height: 80px;
+    }
+  }
+  .vh-100-80 {
+    height: calc(100vh - 80px) !important;
+  }
 
+  .heading-default {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+  }
+  .pt-6 {
+    padding-top: 2rem !important;
+  }
+  .pb-6 {
+    padding-bottom: 3rem !important;
+  }
+  .about-me__left {
+    flex-wrap: wrap;
+      figure {
+        width: 100%;
+      }
+      .about-me__content {
+        padding: 30px 0 30px 20px;
+        width: 100%;
+      }
+  }
+  .home {
+    .home__button {
+      .home__button--contact {
+        padding: 15px 20px;
+      }
+      .home__button--about {
+        margin: 0 0 0 15px;
+        &:after {
+          margin: 0 0 0 10px;
+          width: 50px;
+        }
+      }
+    }
+  }
+  .contact {
+    .vh-100-80 {
+      height: auto !important;
+    }
+  }
+}
+
+@media (max-height:820px) {
+  .about-me__left {
+    figure {
+      margin: 0;
+    }
+    .about-me__content {
+      padding: 20px 30px 35px;
+    }
+  }
 }
