@@ -365,3 +365,15 @@
     }
   }
 }
+
+@media (max-height:768px) {
+  .about-me__left {
+    width: 300px;
+    figure {
+      margin: 0;
+    }
+    .about-me__content {
+      padding: 20px 30px 35px;
+    }
+  }
+}

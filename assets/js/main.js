@@ -101,17 +101,16 @@
         navigation('.nav-link-two');
         navigation('.nav-link-three');
         navigation('.home__button--contact');
+        navigation('.home__button--about');
 
         function navigation(dom) {
             $(dom).each(function (e) {
                 var t = $(this);
                 var href = t.attr('href');
-                $(href).css({'position': 'absolute', 'top': '80px', 'bottom': '0', 'left': '0', 'right': '0', 'z-index': '2', 'visibility': 'visible', 'overflow': 'hidden scroll'});
+                $(href).addClass('section-transition');
 
-                if(!t.hasClass('active')) {
-                    $(href).css({'opacity': '0', 'visibility':'hidden', 'z-index':'0'})
-                } else {
-                    $(href).css('overflow', 'inherit');
+                if(t.hasClass('active')) {
+                    $(href).addClass('active');
                 }
 
                 t.click(function (e) {
@@ -122,18 +121,13 @@
                     $('body').removeClass('nav-open-js');
                     $('.header__button-menu').removeClass('active');
                     $("html, body").animate({ scrollTop: 0 }, "slow");
-                    if(!isMobile()) {
-                        $('.loading').css('display', 'block');
-                    }
+
                     $(dom).each(function (e) {
                         var t = $(this);
                         var href = t.attr('href');
-                        if(!isMobile()) {
-                            $('.loading').delay(666).fadeOut('slow');
-                        }
-                        $(href).css({'opacity': '0', 'visibility':'hidden', 'z-index':'0', 'overflow': 'hidden scroll'});
+                        $(href).removeClass('active');
                         if(t.hasClass('active')) {
-                            $(href).css({'opacity': '1', 'visibility':'visible', 'z-index':'2', 'overflow': 'inherit'});
+                            $(href).addClass('active');
                         }
                     });
                     e.preventDefault();
@@ -144,14 +138,14 @@
 
         function hashtag(){
             var ccc 			= $('.header__nav .nav-active');
-            var element 		= $('.header__nav .header__navigation a.active');
+            var element 		= $('.header__nav .header__navigation .nav-item a.active');
 
             $('.header__nav .header__navigation a').on('mouseenter',function(){
                 var e 			= $(this);
                 currentLink(ccc,e);
             });
             $('.header__nav .header__navigation').on('mouseleave',function(){
-                element 		= $('.header__nav .header__navigation a.active');
+                element 		= $('.header__nav .header__navigation .nav-item a.active');
                 currentLink(ccc,element);
                 element.parent().siblings().removeClass('mleave');
             });
@@ -453,57 +447,6 @@
         });
     }
 
-    var component_blog = function () {
-        var blog_list = $('.my-blog__items'), content = $('.my-blog__popup--inner'), button_close = $('.my-blog__popup--close');
-        blog_list.each(function () {
-            var t = $(this);
-            t.css('display', 'none');
-            var button_view = t.find('.my-blog__detail');
-            // open and load
-            button_view.click(function () {
-                var post_id = $(this).attr('data-id');
-                var data = new FormData();
-                data.append('id', post_id);
-                $.ajax({
-                    url: "assets/php/blog_view.php",
-                    type: "POST",
-                    data: data,
-                    cache: false,
-                    dataType: "json",
-                    contentType: false,
-                    processData: false,
-                    success: function(result) {
-                        if(result.code == 1) {
-                            $('body').addClass('my-blog__popup--js');
-                            content.empty().html(result.view)
-                        } else if(result.code == 0) {
-                            $('body').removeClass('my-blog__popup--js');
-                        }
-                    }
-                });
-            });
-            // close popup
-            button_close.click(function (e) {
-                e.preventDefault();
-                $('body').removeClass('my-blog__popup--js');
-            });
-        });
-
-        // paginator
-        var total_count = blog_list.length;
-        var post_per_page = SETTING.POST_PER_PAGE;
-        var button_load = $('.my-blog__button a');
-        $('.my-blog__items:lt('+post_per_page+')').show();
-        $('.my-blog__items:nth-child('+post_per_page+')').css('border-bottom', 'none');
-        button_load.click(function () {
-            post_per_page = ( post_per_page + SETTING.LOAD_POST <= total_count ) ? post_per_page + SETTING.LOAD_POST : total_count;
-            $('.my-blog__items:lt('+post_per_page+')').fadeIn().addClass('is-on');
-            if(post_per_page == total_count) {
-                $(this).text('End Post');
-            }
-        });
-    }
-    
     var dark = function ( ) {
         // init
         var button = $('.dark-light input');
@@ -612,7 +555,6 @@
         popup();
         form();
         skill();
-        component_blog();
         dark();
         masonry();
 
