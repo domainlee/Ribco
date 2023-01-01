@@ -11,23 +11,18 @@ Version: 1.0.0
 1. Theme default css
 2. Loading
 3. Header
-4. About me
-5. My Resume
-6. My Service
-7. My Project
-8. My Client
-8. My Blog
-10. Contact
-11. Footer
-12. Single Page
-13. Typography
-14. Custom Style
+4. Sidebar
+5. Home
+6. About
+7. Resume
+8. Portfolio
+9. Contact
+10. Custom Style
 -------------------------------------
 */
 
 /* 1. Start Theme Default CSS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
 
 html {
     .light {
@@ -518,7 +513,9 @@ img {
     width: 100%;
     z-index: -1;
 }
+/** 3. End Header **/
 
+/** 4. Start Sidebar **/
 .about-me__left {
     padding: 20px 0 0 20px;
     position: fixed;
@@ -547,9 +544,10 @@ img {
         }
     }
 }
+/** 4. End Sidebar **/
 
+/** 5. Start Home **/
 .home {
-
     .home__name {
         margin: 0 0 30px;
         font-size: 72px;
@@ -640,7 +638,9 @@ img {
         }
     }
 }
+/** 5. End Home **/
 
+/** 6. Start About **/
 .about-me {
     .about-me__intro {
         p {
@@ -747,7 +747,9 @@ img {
         }
     }
 }
+/** 6. End About **/
 
+/** 7. Start Resume **/
 .resume {
     .my-experience__list {
         .my-experience__item {
@@ -910,7 +912,9 @@ img {
         }
     }
 }
+/** 7. End Resume **/
 
+/** 8. Start Portfolio **/
 .portfolio {
     .filter-button-group  {
         position: absolute;
@@ -979,7 +983,9 @@ img {
         }
     }
 }
+/** 8. End Portfolio **/
 
+/** 9. Start Contact **/
 .contact {
     .contact__left {
         padding: 50px;
@@ -1055,420 +1061,9 @@ img {
         }
     }
 }
+/** 9. End Contact **/
 
-    /** 12. Start Single Page **/
-.single-post {
-    .single-post__title {
-        margin: 0 0 10px;
-        font-weight: 500;
-        font-size: 48px;
-    }
-    .post_meta {
-        display: inline-flex;
-        align-items: center;
-        padding: 5px 0;
-        text-transform: uppercase;
-        font-size: 14px;
-    }
-    .post_meta > * {
-        margin: 0 5px 0 0;
-    }
-    .meta_author_avatar {
-        display: inline-block;
-        width: 25px;
-        height: 25px;
-        overflow: hidden;
-        border-radius: 50%;
-    }
-    .meta_author_avatar img {
-        max-width: 100%;
-    }
-    .meta_author_name {
-        margin: 0 15px 0 0;
-    }
-    .meta_categories {
-        margin: 0 15px 0 0;
-    }
-    .post_meta a {
-    }
-    .single-post__component {
-        padding: 20px 0 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .post-tags-inner {
-        display: flex;
-        a {
-            margin: 0 15px 0 0;
-            font-weight: 400;
-            font-size: 14px;
-            &:hover {
-                text-decoration: none;
-            }
-        }
-    }
-    .post-share {
-        display: flex;
-        align-items: center;
-        label {
-            margin: 0;
-            font-weight: 400;
-            text-transform: uppercase;
-        }
-        ul {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            li {
-                list-style: none;
-                a {
-                    margin: 0 0 0 15px;
-                    display: inline-flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50%;
-                    font-size: 16px;
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-    }
-    .post-author {
-        margin: 20px 0 0;
-        padding: 20px;
-        display: flex;
-        border: 1px solid;
-        figure {
-            margin: 0;
-            a {
-                img {
-                    margin: 0;
-                    width: 150px;
-                    height: 150px;
-                    object-fit: cover;
-                }
-            }
-        }
-        .post-author__info {
-            padding: 0 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .post-author__name {
-            font-weight: 500;
-            font-size: 20px;
-            a {
-            }
-        }
-        .post-author__social {
-            margin: 10px 0 0;
-            padding: 0;
-            display: flex;
-            li {
-                list-style: none;
-                margin: 0 10px 0 0;
-                a {
-                }
-            }
-        }
-    }
-    .related-post {
-        padding: 30px 0 0;
-        .related-post__headline {
-            margin: 0 0 15px;
-            padding: 0;
-            text-transform: uppercase;
-            font-size: 22px;
-            font-weight: 500;
-            letter-spacing: 1px;
-            &:after {
-                content: '';
-                display: block;
-                border-bottom: 1px solid #000;
-                margin: 8px 0 0;
-            }
-        }
-        .related-post__list {
-            margin: 0 -10px;
-            display: flex;
-            .related-post__item {
-                width: 33.333%;
-                padding: 0 10px;
-                .related-post__date {
-                    text-transform: uppercase;
-                    font-size: 13px;
-                }
-                .related-post__title {
-                    margin: 5px 0 0;
-                    font-weight: 400;
-                    font-size: 20px;
-                    a {
-                        color: #000;
-                    }
-                }
-                .related-post__image {
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    margin: 0 0 10px;
-                    &:before {
-                        content: '';
-                        display: block;
-                        padding-top: 66.66%;
-                    }
-                }
-            }
-        }
-    }
-    .single-post__nav {
-        margin: 20px 0 0;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        padding: 5px 0;
-        &:before {
-            content: '';
-            position: absolute;
-            width: 1px;
-            top: 20px;
-            bottom: 20px;
-            left: 0;
-            right: 0;
-            background-color: #000;
-            margin: auto;
-        }
-        > div {
-            width: 40%;
-            a {
-                color: #000;
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-            span {
-                text-transform: uppercase;
-                font-size: 13px;
-                color: #888;
-                letter-spacing: 2px;
-            }
-        }
-        .single-post__nav--title {
-            margin: 5px 0 0;
-            font-size: 26px;
-            font-weight: 500;
-        }
-        .single-post__nav--title:hover {
-            text-decoration: underline;
-        }
-        .single-post__nav--next {
-            text-align: right;
-        }
-    }
-    .single-comment {
-        margin: 30px 0 0;
-        .single-comment-title {
-            margin: 0 0 15px;
-            color: #000;
-            padding: 0;
-            text-transform: uppercase;
-            font-size: 22px;
-            font-weight: 500;
-            letter-spacing: 1px;
-            &:after {
-                margin: 8px 0 0;
-                content: '';
-                display: block;
-                border-bottom: 1px solid #000;
-            }
-        }
-        .commentlist {
-            padding: 0;
-            > li {
-                list-style: none;
-                border-bottom: 1px solid #000;
-                padding: 15px 0;
-                &:first-child {
-                    border-top: 1px solid;
-                }
-                article {
-                    display: flex;
-                }
-                .children {
-                    margin: 20px 0 0;
-                    padding: 0 0 0 75px;
-                    li {
-                        list-style: none;
-                    }
-                }
-
-                .comment-author {
-                    img {
-                        object-fit: cover;
-                        margin: 0 15px 0 0;
-                    }
-                }
-                .comment-details {
-                    padding: 0 100px 0 0;
-                    position: relative;
-                    flex: auto;
-                    strong {
-                        margin: 0 10px 0 0;
-                        font-size: 14px;
-                        text-transform: uppercase;
-                        font-weight: 500;
-                    }
-                }
-                .comment-date {
-                    text-transform: uppercase;
-                    font-size: 13px;
-                }
-                .comment-content.entry.clr {
-                    margin: 5px 0 0;
-                    font-size: 14px;
-                    text-transform: none;
-                }
-                .reply {
-                    position: absolute;
-                    top: 10px;
-                    right: 0;
-                    bottom: 10px;
-                    margin: auto;
-                    display: flex;
-                    align-items: center;
-                    border-left: 1px solid #DDD;
-                    padding: 0 0 0 20px;
-                    a {
-                        text-transform: uppercase;
-                        font-size: 13px;
-                        background-color: #000;
-                        color: #FFF;
-                        padding: 2px 10px;
-                    }
-                }
-            }
-        }
-        .comment-form__row {
-            margin: 0 -10px;
-            display: flex;
-            > div {
-                padding: 0 10px;
-                width: 50%;
-            }
-            input {
-                padding: 10px;
-                border: 1px solid #000;
-                width: 100%;
-                transition: all 0.3s ease;
-                border-radius: 0;
-                -webkit-appearance: none;
-                &:focus {
-                    outline: none;
-                    box-shadow: 2px 2px #000;
-                }
-
-            }
-            textarea {
-                margin: 20px 10px;
-                padding: 15px;
-                width: 100%;
-                border: 1px solid #000;
-                transition: all 0.3s ease;
-                border-radius: 0;
-                -webkit-appearance: none;
-                &:focus {
-                    outline: none;
-                    box-shadow: 2px 2px #000;
-                }
-            }
-        }
-        input[type=submit] {
-            background-color: #000;
-            color: #FFF;
-            border: none;
-            padding: 5px 15px;
-            text-transform: uppercase;
-            font-size: 18px;
-            letter-spacing: 1px;
-            border-radius: 0;
-            -webkit-appearance: none;
-        }
-    }
-
-}
-/** 12. End Single Page **/
-
-/** 13. Start Typography **/
-.editor-content {
-    margin: 0 0 15px;
-    img {
-        max-width: 100%;
-        display: block;
-    }
-    a {
-        color: #000;
-        font-weight: 500;
-        text-decoration: underline;
-    }
-    figure {
-        display: flex;
-        flex-direction: column;
-        img {
-            max-width: 100%;
-        }
-        figcaption {
-            margin: 6px 0 0;
-            font-size: 13px;
-            font-style: italic;
-            border-bottom: 1px solid;
-            font-weight: 400;
-        }
-        &.aligncenter {
-            justify-content: center;
-            align-items: center;
-        }
-        &.alignleft {
-            justify-content: start;
-            align-items: flex-start;
-        }
-        &.alignright {
-            justify-content: end;
-            align-items: flex-end;
-        }
-    }
-    blockquote {
-        margin: 15px 0;
-        padding: 15px 30px;
-        position: relative;
-    }
-    &.editor-content__col-two {
-        columns: 2;
-        -webkit-columns: 2;
-        -moz-column-count: 2;
-        -webkit-column-gap: 30px;
-        -moz-column-gap: 30px;
-        column-gap: 30px;
-        text-align: justify;
-    }
-    .editor-content__dropcap:first-letter {
-        margin: 5px 18px 10px 0;
-        display: block;
-        float: left;
-        font-size: 5em;
-        font-weight: 500;
-        line-height: 1;
-    }
-}
-/*** 13. End Typography **/
-
-/** 14. Start Custom Style **/
-body.my-blog__popup--js {
-    overflow: hidden;
-}
+/** 10. Start Custom Style **/
 .social {
     margin: 0;
     padding: 0;
@@ -1575,7 +1170,6 @@ body.my-blog__popup--js {
     }
 }
 
-
 .knobs, .layer {
     position: absolute;
     top: 0;
@@ -1657,7 +1251,6 @@ body.my-blog__popup--js {
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
-
 .section-transition {
     position: absolute;
     top: 80px;
@@ -1688,5 +1281,5 @@ body.my-blog__popup--js {
     }
 }
 
-/*** 14. End Custom Style **/
+/*** 10. End Custom Style **/
 
