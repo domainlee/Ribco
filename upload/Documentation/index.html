@@ -149,19 +149,19 @@
             <pre>
                 <code class="html">
 &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
+&lt;!-- Use dark/light let set default for themes --&gt;
+&lt;html lang=&quot;en&quot; data-theme=&quot;light&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;utf-8&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;
-    &lt;title&gt;JoeMo. - Personal resume, portfolio, blog HTML Template&lt;/title&gt;
+    &lt;title&gt;Ribco - Personal resume, portfolio, blog HTML Template&lt;/title&gt;
 
     &lt;link href=&quot;/&quot; rel=&quot;canonical&quot;&gt;
     &lt;link href=&quot;assets/img/favicon.png&quot; rel=&quot;shortcut icon&quot; type=&quot;image/vnd.microsoft.icon&quot;&gt;
 
-    &lt;!--- start style ---&gt;
+    &lt;!-- start style --&gt;
     &lt;link href=&quot;assets/build/css/main.min.css&quot; media=&quot;screen&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-    &lt;!--- end style ---&gt;
-
+    &lt;!-- end style --&gt;
 &lt;/head&gt;
 &lt;body class=&quot;home&quot;&gt;
 
@@ -169,55 +169,45 @@
     &lt;div class=&quot;loading&quot;&gt;&lt;/div&gt;
     &lt;!-- end loading--&gt;
 
+    &lt;!-- start dark mode desktop --&gt;
+    &lt;div class=&quot;mode-dark-light dark-light d-none d-lg-block&quot;&gt;
+    &lt;/div&gt;
+    &lt;!-- end dark mode desktop --&gt;
+
     &lt;!-- start header--&gt;
-    &lt;section class=&quot;header d-flex align-content-center flex-column&quot; &gt;&lt;/section&gt;
+    &lt;section class=&quot;header d-flex align-content-center flex-row&quot;&gt;&lt;/section&gt;
+    &lt;div class=&quot;header--fixed&quot;&gt;&lt;/div&gt;
     &lt;!-- end header--&gt;
 
+    &lt;!-- start sidebar--&gt;
+    &lt;div class=&quot;sidebar d-none d-lg-block&quot;&gt;&lt;/div&gt;
+    &lt;!-- end sidebar--&gt;
+
+    &lt;!-- start home --&gt;
+    &lt;section id=&quot;home&quot; class=&quot;home mb-0&quot; &gt;&lt;/section&gt;
+    &lt;!-- end home --&gt;
+
     &lt;!-- start about me --&gt;
-    &lt;section id=&quot;about-me&quot; class=&quot;py-5&quot;&gt;&lt;/section&gt;
-    &lt;section class=&quot;about-me px-50 pb-0 w-50 offset-6&quot;&gt;&lt;/section&gt;
+    &lt;section id=&quot;about&quot; class=&quot;about-me mb-0&quot; &gt;&lt;/section&gt;
     &lt;!-- end about me --&gt;
+
     &lt;!-- start my resume --&gt;
-    &lt;section id=&quot;my-resume&quot; class=&quot;py-5&quot;&gt;&lt;/section&gt;
-    &lt;section class=&quot;my-resume px-50 pb-0 w-50 offset-6&quot;&gt;&lt;/section&gt;
+    &lt;section id=&quot;resume&quot; class=&quot;resume&quot;&gt;&lt;/section&gt;
     &lt;!-- end my resume --&gt;
 
-    &lt;!-- start my project --&gt;
-    &lt;section id=&quot;my-project&quot; class=&quot;py-5&quot;&gt;&lt;/section&gt;
-    &lt;section class=&quot;my-project px-50 pb-0 w-50 offset-6&quot;&gt;&lt;/section&gt;
-    &lt;!-- end my project --&gt;
-
-    &lt;!-- start my client --&gt;
-    &lt;section id=&quot;my-client&quot; class=&quot;py-5&quot;&gt;&lt;/section&gt;
-    &lt;section class=&quot;my-client px-50 pb-0 w-50 offset-6&quot;&gt;&lt;/section&gt;
-    &lt;!-- start my client --&gt;
-
-    &lt;!-- start my blog --&gt;
-    &lt;section id=&quot;my-blog&quot; class=&quot;py-5&quot;&gt;&lt;/section&gt;
-    &lt;section class=&quot;my-blog px-50 pb-0 w-50 offset-6&quot;&gt;&lt;/section&gt;
-    &lt;!-- end my blog --&gt;
+    &lt;!-- start my portfolio --&gt;
+    &lt;section id=&quot;portfolio&quot; class=&quot;portfolio&quot;&gt;&lt;/section&gt;
+    &lt;!-- end my portfolio --&gt;
 
     &lt;!-- start contact --&gt;
-    &lt;section id=&quot;contact&quot; class=&quot;py-5&quot;&gt;&lt;/section&gt;
-    &lt;section class=&quot;contact px-50 pb-5 w-50 offset-6&quot;&gt;&lt;/section&gt;
+    &lt;section id=&quot;contact&quot; class=&quot;contact&quot;&gt;&lt;/section&gt;
     &lt;!-- end contact --&gt;
 
-    &lt;!-- start footer --&gt;
-    &lt;section class=&quot;footer px-50 pb-0 w-50 offset-6&quot;&gt;&lt;/section&gt;
-    &lt;!-- end footer --&gt;
-
-    &lt;!--- start script ---&gt;
+    &lt;!-- start script --&gt;
     &lt;script src=&quot;assets/build/js/main.bundle.js&quot;&gt;&lt;/script&gt;
-    &lt;!--- end script ---&gt;
+    &lt;!-- end script --&gt;
 
 &lt;/body&gt;
-&lt;script&gt;
-    // setting paginator for blog
-    SETTING = {
-        POST_PER_PAGE: 3,
-        LOAD_POST: 2
-    }
-&lt;/script&gt;
 &lt;/html&gt;
                 </code>
             </pre>
