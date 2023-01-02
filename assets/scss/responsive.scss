@@ -3,8 +3,33 @@
     padding-right: 5rem !important;
     padding-left: 5rem !important;
   }
+
+  .header {
+    .header_inner {
+      height: 70px;
+    }
+  }
   .about-me__left {
     width: 350px;
+  }
+  .home {
+    .home__name {
+      font-size: 60px;
+    }
+    .home__intro {
+      margin: 37px 0;
+    }
+    .home__button {
+      .home__button--contact {
+        padding: 15px 35px;
+      }
+    }
+  }
+  .section-animation {
+    top: 70px;
+  }
+  .vh-100-80 {
+    min-height: calc(100vh - 70px) !important;
   }
 }
 @media (max-width: 1200px) {
@@ -311,7 +336,7 @@
     }
   }
   .vh-100-80 {
-    height: calc(100vh - 80px) !important;
+    min-height: calc(100vh - 80px) !important;
   }
 
   .heading-default {

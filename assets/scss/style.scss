@@ -118,7 +118,7 @@ img {
     padding-bottom: 4rem !important;
 }
 .vh-100-80 {
-    height: calc(100vh - 80px) !important;
+    min-height: calc(100vh - 80px) !important;
 }
 .c-violet {
     color: var(--text-light-purple);
@@ -992,7 +992,7 @@ img {
         background: var(--bg-grey-black);
         h3 {
             margin: 0 0 20px;
-            font-size: 40px;
+            font-size: 35px;
             font-style: italic;
             color: var(--text);
             strong {
@@ -1251,14 +1251,14 @@ img {
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
-.section-transition {
+.section-animation {
     position: absolute;
     top: 80px;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 0;
-    overflow: hidden scroll;
+    overflow: hidden;
     .bg-white {
         > div {
             opacity: 0;

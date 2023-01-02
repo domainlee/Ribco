@@ -97,44 +97,34 @@
             });
         }
         hashtag();
-        navigation('.nav-link');
-        navigation('.nav-link-two');
-        navigation('.nav-link-three');
-        navigation('.home__button--contact');
-        navigation('.home__button--about');
 
-        function navigation(dom) {
-            $(dom).each(function (e) {
-                var t = $(this);
-                var href = t.attr('href');
-                $(href).addClass('section-transition');
+        var section 		= jQuery('.section-animation');
+        var allLi 			= jQuery('.header__navigation li');
+        var button			= jQuery('.header__navigation a');
+        var wrapper 		= jQuery('.home');
 
-                if(t.hasClass('active')) {
-                    $(href).addClass('active');
-                }
-
-                t.click(function (e) {
-                    $(dom).removeClass('active');
-                    t.addClass('active');
-                    hashtag();
-                    animation();
-                    $('body').removeClass('nav-open-js');
-                    $('.header__button-menu').removeClass('active');
-                    $("html, body").animate({ scrollTop: 0 }, "slow");
-
-                    $(dom).each(function (e) {
-                        var t = $(this);
-                        var href = t.attr('href');
-                        $(href).removeClass('active');
-                        if(t.hasClass('active')) {
-                            $(href).addClass('active');
-                        }
-                    });
-                    e.preventDefault();
-                });
-            });
-        }
-
+        button.on('click',function(){
+            var element 	= $(this);
+            var href		= element.attr('href');
+            if(element.parent().hasClass('home__button') || element.parent().hasClass('header__button-hire')){
+                $('.header__nav .header__navigation a.nav-link[href="'+href+'"]').trigger('click');
+                hashtag();
+                return false;
+            }
+            $('body').removeClass('nav-open-js');
+            $('.header__button-menu').removeClass('active');
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            var sectionID 	= $(href);
+            var parent	 	= element.closest('li');
+            if(!parent.hasClass('active')) {
+                allLi.removeClass('active');
+                wrapper.find(section).removeClass('active');
+                $('.nav-link').removeClass('active');
+                element.addClass('active');
+                $(sectionID).addClass('active');
+            }
+            return false;
+        });
 
         function hashtag(){
             var ccc 			= $('.header__nav .nav-active');
