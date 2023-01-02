@@ -37,7 +37,7 @@
         }
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".type--js > .wrap { border-right: 0.08em solid #000000}";
+        // css.innerHTML = "";
         document.body.appendChild(css);
     }
 

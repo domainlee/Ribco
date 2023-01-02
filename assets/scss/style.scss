@@ -69,6 +69,7 @@ html[data-theme='dark'] {
     --border-heading: #555555;
     --bg-grey-black: #3d3d3d;
     --bg-dark-mode-icon: brightness(0) invert(0);
+    --text-light-purple: #FFFFFF;
 
 }
 
@@ -122,6 +123,7 @@ img {
 }
 .c-violet {
     color: var(--text-light-purple);
+    font-weight: 600;
 }
 .heading-default {
     padding: 0 0 15px;
@@ -1280,6 +1282,7 @@ img {
         }
     }
 }
+.type--js > .wrap { border-right: 0.08em solid var(--text)}
 
 /*** 10. End Custom Style **/
 

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<!-- Use dark/light let set default for themes -->
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Ribco - Personal resume, portfolio, blog HTML Template</title>
+
+    <link href="/" rel="canonical">
+    <link href="assets/img/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+    <!-- start style -->
+    <link href="assets/build/css/main.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- end style -->
+</head>
+<body class="home">
+
+    <!-- start loading-->
+    <div class="loading">
+        <div class="loading__inner">
+            <div class="loading__list">
+                <img src="assets/img/loading.svg" alt="loading" >
+            </div>
+        </div>
+    </div>
+    <!-- end loading-->
+
+
+    <!-- start dark mode desktop -->
+    <div class="mode-dark-light dark-light d-none d-lg-block">
+        <div class="button">
+            <input type="checkbox" class="checkbox">
+            <div class="knobs"><span>Dark</span><strong><label>Light</label><i class="i-light"></i></strong></div>
+        </div>
+    </div>
+    <!-- end dark mode desktop -->
+
+    <!-- start header-->
+    <section class="header d-flex align-content-center flex-row">
+        <div class="container-xl">
+            <div class="row bg-white">
+                <div class="col-12 px-6">
+                    <div class="header_inner d-flex align-items-center">
+                        <div class="header__left">
+                            <a href="index.html">
+                                <h1 class="header__logo m-0">
+                                    <img class="light" src="assets/img/logo.png" alt="logo" />
+                                    <img class="dark" src="assets/img/logo-dark.png" alt="logo" />
+                                </h1>
+                            </a>
+                        </div>
+                        <div class="header__menu d-flex flex-row justify-content-center align-items-center">
+                            <div class="header__nav d-flex align-items-center justify-content-center mx-0 mx-lg-3">
+                                <ul class="header__navigation nav d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                                    <li class="nav-item"><a class="nav-link active" href="#home"><i class="i-home"></i>Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#about"><i class="i-about"></i>About</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#resume"><i class="i-resume"></i>Resume</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#portfolio"><i class="i-portfolio"></i>Portfolio</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="i-contact"></i>Contact</a></li>
+                                    <li class="nav-item header__button-hire mt-3 d-block d-lg-none"><a class="" href="#contact">Hire Me</a></li>
+                                </ul>
+                                <span class="nav-active"></span>
+                            </div>
+                        </div>
+                        <div class="ms-auto d-flex align-items-center">
+                            <div class="d-flex">
+                                <a class="header__button-menu d-inline-flex d-lg-none"></a>
+                            </div>
+                            <div class="dark-light-mobile dark-light d-block d-lg-none">
+                                <div class="button">
+                                    <input type="checkbox" class="checkbox">
+                                    <div class="knobs"><span>Dark</span><strong><label>Light</label><i class="i-light"></i></strong></div>
+                                </div>
+                            </div>
+                            <div class="header__button-hire header__navigation d-none d-lg-block">
+                                <a class="nav-link-three" href="#contact">Hire Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="header--fixed"></div>
+    <!-- end header-->
+
+    <!-- start sidebar-->
+    <div class="sidebar d-none d-lg-block">
+        <div class="container-xl">
+            <div class="row bg-white">
+                <div class="col-12 px-6">
+                    <div class="about-me__left">
+                        <figure class="about-me__avatar ratio ratio-5x6 bg-cover lazy" data-viewport="custom" data-delay="1000" data-src="assets/images/avatar.png"></figure>
+                        <div class="about-me__content">
+                            <h4 class="about-me__name">Alexzender</h4>
+                            <p class="about-me__role">Web Developer | Sanfransico</p>
+                            <div class="about-me__contact">
+                                <p>(+987) 987 654 321</p>
+                                <p>alex.example@gmail.com</p>
+                            </div>
+                            <div class="social">
+                                <ul>
+                                    <li><a><i class="i-be"></i></a></li>
+                                    <li><a><i class="i-behance"></i></a></li>
+                                    <li><a><i class="i-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end sidebar-->
+
+    <!-- start home -->
+    <section id="home" class="home mb-0 section-animation active" >
+        <div class="container-xl ">
+            <div class="row bg-white vh-100-80">
+                <div class="col-12 px-6 d-flex align-items-center">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 offset-0 offset-lg-5 pb-6">
+                            <h3 class="home__name" data-viewport="opacity" data-delay="600">
+                                <span class="d-block">I'm <strong>Alex</strong></span>
+                                <strong class="home__role d-block type--js" data-period="2000" data-type='["Web Developer","Web Designer", "Copy Writer"]'>Developer</strong>
+                            </h3>
+                            <div class="home__intro" data-viewport="opacity" data-delay="500">
+                                <p>
+                                    I'm a NewYork based web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center" data-viewport="opacity">
+                                <div class="home__button header__navigation">
+                                    <a class="home__button--contact" href="#contact">Contact Me</a>
+                                    <a class="home__button--about" href="#about"><i class="i-arrow"></i>About Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end home -->
+
+    <!-- start about me -->
+    <section id="about" class="about-me mb-0 section-animation" >
+        <div class="container-xl ">
+            <div class="row bg-white">
+                <div class="col-12 px-6">
+                    <div class="row pt-6">
+                        <div class="col-12 col-lg-6 offset-0 offset-lg-4">
+                            <h2 class="heading-default" data-viewport="opacity">About<span>Me</span></h2>
+                            <div class="about-me__intro" data-viewport="opacity" data-delay="500">
+                                <p>
+                                    Hello there! My name is <span class="c-violet">William Alex</span>. I am a web designer & developer, and I'm very passionate and dedicated to my work.
+                                </p>
+                                <p>
+                                    With 20 years experience as a professional a graphic designer, I have acquired the skills and knowledge necessary to make your project a success.
+                                </p>
+                            </div>
+                            <div class="row about-me__resume my-5">
+                                <div class="col-12 col-md-6 mb-4">
+                                    <label>Age</label>
+                                    <strong class="d-block">25</strong>
+                                </div>
+                                <div class="col-12 col-md-6 mb-4">
+                                    <label>Location</label>
+                                    <strong class="d-block">New York, USA</strong>
+                                </div>
+                                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                                    <label>Phone</label>
+                                    <strong class="d-block">(+987) 987 654 321</strong>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label>Email</label>
+                                    <strong class="d-block">alex.example@gmail.com</strong>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a class="button-download" download href="assets/img/mycv.pdf">Download My Resume <i class="i-download"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-6">
+                        <div class="col-12 col-lg-8 offset-0 offset-lg-4">
+                            <h2 class="heading-default" data-viewport="opacity">My<span>Service</span></h2>
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="service-item">
+                                        <div class="service-item__left">
+                                            <i class="i-home-2"></i>
+                                        </div>
+                                        <div class="service-item__right">
+                                            <h3>Economic science</h3>
+                                            <div class="">
+                                                Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor elementum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="service-item">
+                                        <div class="service-item__left">
+                                            <i class="i-adv"></i>
+                                        </div>
+                                        <div class="service-item__right">
+                                            <h3>Marketing & advertising</h3>
+                                            <div class="">
+                                                Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor elementum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="service-item">
+                                        <div class="service-item__left">
+                                            <i class="i-desktop"></i>
+                                        </div>
+                                        <div class="service-item__right">
+                                            <h3>Web development</h3>
+                                            <div class="">
+                                                Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor elementum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="service-item">
+                                        <div class="service-item__left">
+                                            <i class="i-music"></i>
+                                        </div>
+                                        <div class="service-item__right">
+                                            <h3>Music writing</h3>
+                                            <div class="">
+                                                Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor elementum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="service-item">
+                                        <div class="service-item__left">
+                                            <i class="i-game"></i>
+                                        </div>
+                                        <div class="service-item__right">
+                                            <h3>Game development</h3>
+                                            <div class="">
+                                                Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor elementum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="service-item">
+                                        <div class="service-item__left">
+                                            <i class="i-photo"></i>
+                                        </div>
+                                        <div class="service-item__right">
+                                            <h3>Photography & video</h3>
+                                            <div class="">
+                                                Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor elementum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-6 pb-6">
+                        <div class="col-12 col-lg-8 offset-0 offset-lg-4">
+                            <h2 class="heading-default" data-viewport="opacity">My<span>Pricing</span></h2>
+                            <div class="pricing__list pricing__js owl-carousel owl-theme">
+                                <div class="pricing__item">
+                                    <h4>Basic <i class="i-basic"></i></h4>
+                                    <div class="pricing__item--price"><span>$</span><strong>30</strong><span>/hr</span></div>
+                                    <div>
+                                        <i class="i-arrow"></i> Photography
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Web development</del>
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Music Writing</del>
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Advetising</del>
+                                    </div>
+                                </div>
+                                <div class="pricing__item">
+                                    <h4>Premium <i class="i-premium"></i></h4>
+                                    <div class="pricing__item--price"><span>$</span><strong>48</strong><span>/hr</span></div>
+                                    <div>
+                                        <i class="i-arrow"></i> Photography
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> Web development
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Music Writing</del>
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Advetising</del>
+                                    </div>
+                                </div>
+                                <div class="pricing__item">
+                                    <h4>Unlimited <i class="i-unlimited"></i></h4>
+                                    <div class="pricing__item--price"><span>$</span><strong>72</strong><span>/hr</span></div>
+                                    <div>
+                                        <i class="i-arrow"></i> Photography
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> Web development
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> Music Writing
+                                    </div>
+                                    <div>
+                                        <i class="i-arrow"></i> <del>Advetising</del>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end about me -->
+
+    <!-- start my resume -->
+    <section id="resume" class="resume section-animation">
+        <div class="container-xl">
+            <div class="row bg-white">
+                <div class="col-12 px-6">
+
+                    <div class="row pt-5">
+                        <div class="col-12 col-lg-8 offset-0 offset-lg-4">
+                            <h2 class="heading-default" data-viewport="opacity">My<span>Experience</span></h2>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="my-experience__list my-experience__js owl-carousel owl-theme">
+                                    <div class="my-experience__item">
+                                        <div class="my-experience__item--inner">
+                                            <div class="my-experience__date"><i class="i-circle"></i>2018 - 2019 <span>-Envato</span></div>
+                                            <h4 class="my-experience__name">Web Developer</h4>
+                                            <div class="my-experience__description">I have acquired the skills and knowledge necessary to make your project a success.</div>
+                                        </div>
+                                    </div>
+                                    <div class="my-experience__item">
+                                        <div class="my-experience__item--inner">
+                                            <div class="my-experience__date"><i class="i-circle"></i>2020 - 2021 <span>-Envato</span></div>
+                                            <h4 class="my-experience__name">Web Developer</h4>
+                                            <div class="my-experience__description">I have acquired the skills and knowledge necessary to make your project a success.</div>
+                                        </div>
+                                    </div>
+                                    <div class="my-experience__item">
+                                        <div class="my-experience__item--inner">
+                                            <div class="my-experience__date"><i class="i-circle"></i>2021 - Present <span>-Envato</span></div>
+                                            <h4 class="my-experience__name">Web Developer</h4>
+                                            <div class="my-experience__description">I have acquired the skills and knowledge necessary to make your project a success.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-6">
+                        <div class="col-12 col-lg-8 offset-0 offset-lg-4">
+                            <h2 class="heading-default" data-viewport="opacity">My<span>Skills</span></h2>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="my-resume__skill">
+                                        <div class="my-resume__skill--item " data-viewport="custom">
+                                            <div class="my-resume__skill--precent" data-precent="85"><label>Photoshop</label><div></div><span class="count"></span></div>
+                                        </div>
+                                        <div class="my-resume__skill--item " data-viewport="custom">
+                                            <div class="my-resume__skill--precent" data-precent="80"><label>Wordpress</label><div></div><span class="count"></span></div>
+                                        </div>
+                                        <div class="my-resume__skill--item " data-viewport="custom">
+                                            <div class="my-resume__skill--precent" data-precent="90"><label>ReactJS</label><div></div><span class="count"></span></div>
+                                        </div>
+                                        <div class="my-resume__skill--item " data-viewport="custom">
+                                            <div class="my-resume__skill--precent" data-precent="60"><label>System Admin</label><div></div><span class="count"></span></div>
+                                        </div>
+                                        <div class="my-resume__skill--item " data-viewport="custom">
+                                            <div class="my-resume__skill--precent" data-precent="70"><label>Jquery</label><div></div><span class="count"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-6">
+                        <div class="col-12 col-lg-8 offset-0 offset-lg-4">
+                            <h2 class="heading-default" data-viewport="opacity">Client<span>Reviews</span></h2>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="client-reviews client-reviews__js owl-carousel owl-theme">
+                                        <div class="client-reviews__item">
+                                            <div class="client-reviews__item--inner">
+                                                <div class="client-reviews__content">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed sit ultrices et sed metus sollicitudin...
+                                                </div>
+                                                <div class="client-reviews__info">
+                                                    <div>
+                                                        <img src="assets/images/client-1.png" alt="" >
+                                                    </div>
+                                                    <div>
+                                                        <h3>Emerson Saris</h3>
+                                                        <span>58, California, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="client-reviews__item">
+                                            <div class="client-reviews__item--inner">
+                                                <div class="client-reviews__content">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed sit ultrices et sed metus sollicitudin...
+                                                </div>
+                                                <div class="client-reviews__info">
+                                                    <div>
+                                                        <img src="assets/images/client-1.png" alt="" >
+                                                    </div>
+                                                    <div>
+                                                        <h3>Emerson Saris</h3>
+                                                        <span>58, California, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="client-reviews__item">
+                                            <div class="client-reviews__item--inner">
+                                                <div class="client-reviews__content">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed sit ultrices et sed metus sollicitudin...
+                                                </div>
+                                                <div class="client-reviews__info">
+                                                    <div>
+                                                        <img src="assets/images/client-1.png" alt="" >
+                                                    </div>
+                                                    <div>
+                                                        <h3>Emerson Saris</h3>
+                                                        <span>58, California, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-6  pb-6">
+                        <div class="col-12 col-lg-8 offset-0 offset-lg-4">
+                            <h2 class="heading-default" data-viewport="opacity">Worked with<span>Brands</span></h2>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="brands brands__js owl-carousel owl-theme">
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-1.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-2.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-3.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-4.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-1.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-2.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-3.png" alt="" >
+                                        </div>
+                                        <div class="brands__item">
+                                            <img src="assets/images/brand-4.png" alt="" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end my resume -->
+
+    <!-- start my portfolio -->
+    <section id="portfolio" class="portfolio section-animation">
+        <div class="container-xl">
+            <div class="row bg-white min-vh-100">
+                <div class="col-12 px-6 pt-6  pb-6">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 offset-0 offset-lg-4">
+                            <h2 class="heading-default" data-viewport="opacity">My<span>Portfolio</span></h2>
+                            <div class="position-relative">
+                                <div class="filter-button-group">
+                                    <button class="active" data-filter="*">Show All</button>
+                                    <button data-filter=".brand">Brand</button>
+                                    <button data-filter=".colors">Colors</button>
+                                    <button data-filter=".photography">Photography</button>
+                                    <button data-filter=".web">Web</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="portfolio__js portfolio__list grid">
+                                        <div class="portfolio__item photography" data-viewport="opacity">
+                                            <img src="assets/images/portfolio-5.png" alt="Portfolio 1" >
+                                            <div class="portfolio__item--inner">
+                                                <div class="portfolio__item--content">
+                                                    <div>
+                                                        <span>App</span>
+                                                        <h4>ios  Development</h4>
+                                                    </div>
+                                                    <a class="button-image" href="assets/images/portfolio-5.png"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio__item colors web" data-viewport="opacity">
+                                            <img src="assets/images/portfolio-2.png" alt="Portfolio 2" >
+                                            <div class="portfolio__item--inner">
+                                                <div class="portfolio__item--content">
+                                                    <div>
+                                                        <span>Web</span>
+                                                        <h4>Landing Development</h4>
+                                                    </div>
+                                                    <a class="button-image" href="assets/images/portfolio-2.png"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio__item photography brand" data-viewport="opacity">
+                                            <img src="assets/images/portfolio-3.png" alt="Portfolio 3" >
+                                            <div class="portfolio__item--inner">
+                                                <div class="portfolio__item--content">
+                                                    <div>
+                                                        <span>Photography</span>
+                                                        <h4>Design Landing</h4>
+                                                    </div>
+                                                    <a class="button-image" href="assets/images/portfolio-3.png"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio__item colors" data-viewport="opacity">
+                                            <img src="assets/images/portfolio-4.png" alt="Portfolio 4" >
+                                            <div class="portfolio__item--inner">
+                                                <div class="portfolio__item--content">
+                                                    <div>
+                                                        <span>Colors</span>
+                                                        <h4>Design Layout</h4>
+                                                    </div>
+                                                    <a class="button-image" href="assets/images/portfolio-4.png"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio__item brand web" data-viewport="opacity">
+                                            <img src="assets/images/portfolio-1.png" alt="Portfolio 1" >
+                                            <div class="portfolio__item--inner">
+                                                <div class="portfolio__item--content">
+                                                    <div>
+                                                        <span>Brand</span>
+                                                        <h4>Design Logo</h4>
+                                                    </div>
+                                                    <a class="button-image" href="assets/images/portfolio-1.png"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end my portfolio -->
+
+    <!-- start contact -->
+    <section id="contact" class="contact section-animation">
+        <div class="container-xl">
+            <div class="row bg-white">
+                <div class="col-12 px-6 pt-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 offset-0 offset-lg-4">
+                            <h2 class="heading-default" data-viewport="opacity">Let’s<span>Connect</span></h2>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="contact__left">
+                                        <h3><strong>Feel free to</strong>contact me</h3>
+                                        <div class="contact__left--intro">
+                                            I am passionate about building excellent software that improves
+                                        </div>
+                                        <div>
+                                            <p>Tel : +77 022 444 05 05</p>
+                                            <p>support@alex.com</p>
+                                            <p>Ave Street Avenue, New York</p>
+                                        </div>
+                                        <div class="social">
+                                            <ul>
+                                                <li><a><i class="i-be"></i></a></li>
+                                                <li><a><i class="i-behance"></i></a></li>
+                                                <li><a><i class="i-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 ps-3 ps-md-4 my-5 my-md-0">
+                                    <div class="contact__right">
+                                        <h4 class="contact__right--heading">Or, send message</h4>
+                                        <form id="contact__form" class="contact__form" method="post" novalidate="novalidate">
+                                            <div class="form__row">
+                                                <div class="form__item">
+                                                    <input type="text" name="name" placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div class="form__row">
+                                                <div class="form__item">
+                                                    <input type="email" name="email" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="form__row">
+                                                <div class="form__item">
+                                                    <textarea name="message" placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form__row">
+                                                <button type="submit">Send Message</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contact -->
+
+    <!-- start script -->
+    <script src="assets/build/js/main.bundle.js"></script>
+    <!-- end script -->
+
+</body>
+</html>
