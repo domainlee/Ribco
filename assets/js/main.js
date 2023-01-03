@@ -382,15 +382,6 @@
         return elementBottom > viewportTop && elementTop < viewportBottom;
     }
 
-    var scrollTo = function () {
-        if($('.home').length) {
-            // return new bootstrap.ScrollSpy(document.body,{
-            //     target: ".header__menu",
-            //     offset: 10
-            // });
-        }
-    }
-
     var popup = function() {
         $('.button-image').magnificPopup({
             type: 'image',
@@ -441,13 +432,23 @@
         // init
         var button = $('.dark-light input');
 
+        let theme_default = $('html').attr('data-theme-default');
+
+        if(theme_default === 'true') {
+            localStorage.removeItem("data-theme");
+        }
+
         let theme = localStorage.getItem('data-theme');
         if(theme){
             $('html').attr('data-theme', theme);
-            if(theme === 'light') {
-                button.attr("checked", true);
-            }
         }
+
+        if(theme === 'light') {
+            button.attr("checked", true);
+        } else {
+            button.attr("checked", false);
+        }
+
         var default_theme = $('html').attr('data-theme');
         localStorage.setItem("data-theme", default_theme);
 
@@ -463,12 +464,12 @@
         // to light
         function to_light(){
             $('html').attr("data-theme", "light");
-            localStorage.setItem("data-theme", "light")
+            localStorage.setItem("data-theme", "light");
         }
         // to dark
         function to_dark(){
             $('html').attr("data-theme", "dark");
-            localStorage.setItem("data-theme", "dark")
+            localStorage.setItem("data-theme", "dark");
         }
     }
 
@@ -508,7 +509,7 @@
     }
 
     var masonry = function () {
-        // var $ = require('jquery');
+        var $ = require('jquery');
         var jQueryBridget = require('jquery-bridget');
         var Isotope = require('isotope-layout');
         jQueryBridget( 'isotope', Isotope, $ );
@@ -541,7 +542,6 @@
         nav();
         lazy();
         owlCarousel();
-        scrollTo();
         popup();
         form();
         skill();
